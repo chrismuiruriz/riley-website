@@ -6,6 +6,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CustomHead from "../components/CustomHead";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Image from "next/image";
+import clients from "../public/clients.png";
+import partners from "../public/partners.png";
 
 export default function Home(): ReactElement {
   const router = useRouter();
@@ -49,7 +52,7 @@ export default function Home(): ReactElement {
               <Link href="/#quote-form">
                 <a className="btn inline-flex item-center">
                   <span>
-                    Request for a consultation{" "}
+                    Request for a quote{" "}
                     <span className="text-sm ml-2 inline-block">
                       <FontAwesomeIcon icon={["fas", "arrow-circle-right"]} />
                     </span>
@@ -185,7 +188,10 @@ export default function Home(): ReactElement {
         </div>
       </section>
 
-      <section className="section highlighted py-6" id="insurance-solutions">
+      <section
+        className="section highlighted py-6 pb-20"
+        id="insurance-solutions"
+      >
         <div className="container grid md:grid-cols-3 gap-4">
           <div className="relative">
             <div className="bg absolute z-0 w-full h-full bg-opacity-50 bg-blue-600"></div>
@@ -278,74 +284,231 @@ export default function Home(): ReactElement {
         </div>
       </section>
 
-      <section className="section md:py-14 py-8" id="about-us">
-        <div className="container grid md:grid-cols-2 md:gap-12">
-          <div>
-            <img
-              className="max-w-full"
-              src="https://i1.wp.com/assurena.stylusthemes.com/wp-content/uploads/2020/11/happy-family.jpg?resize=1024%2C1024&ssl=1"
-              alt=""
-            />
-          </div>
+      <section className="section md:pt-14 pt-8 bg-blue-50" id="journey">
+        <div className="container pb-8 md:pb-14 ">
           <div className="py-6">
-            <h4 className="mb-4 text-primary font-bold md:text-2xl text-xl">
-              About Us
-            </h4>
-
-            <h2 className="mb-6 font-extrabold md:text-4xl text-3xl">
+            <h2 className="mb-6 text-center font-extrabold md:text-5xl text-3xl">
               Our Journey
             </h2>
 
-            <p className="mb-3 leading-6">
-              Riley Insurance Consultants and Agency is a limited company that
-              deals with all products in{" "}
-              <span className="font-semibold text-primary">General</span>{" "}
-              Insurance,{" "}
-              <span className="font-semibold text-primary">Medical</span>{" "}
-              Insurance and{" "}
-              <span className="font-semibold text-primary">Life</span>{" "}
-              Assurance.
-            </p>
+            <div className=" text-center">
+              <p className="mb-3 leading-6">
+                Riley Insurance Consultants and Agency is a limited company that
+                deals with all products in{" "}
+                <span className="font-semibold text-primary">General</span>{" "}
+                Insurance,{" "}
+                <span className="font-semibold text-primary">Medical</span>{" "}
+                Insurance and{" "}
+                <span className="font-semibold text-primary">Life</span>{" "}
+                Assurance.
+              </p>
 
-            <p className="mb-3 leading-6">
-              We offer{" "}
-              <span className="font-semibold text-primary">individual</span> and{" "}
-              <span className="font-semibold text-primary">Business</span>{" "}
-              Insurance{" "}
-              <span className="font-semibold text-primary">Solutions</span>. Our
-              clientele consist of individuals, SME's, corporates and
-              multi-nationals.
-            </p>
+              <p className="mb-3 leading-6">
+                We offer{" "}
+                <span className="font-semibold text-primary">individual</span>{" "}
+                and <span className="font-semibold text-primary">Business</span>{" "}
+                Insurance{" "}
+                <span className="font-semibold text-primary">Solutions</span>.
+                Our clientele consist of individuals, SME's, corporates and
+                multi-nationals.
+              </p>
 
-            <p className="mb-4 leading-6">
-              We have partnered with reputable insurance companies, thereby
-              providing our clients with competitive pricing and end to end
-              service.
-            </p>
+              <p className="mb-4 leading-6">
+                We have partnered with reputable insurance companies, thereby
+                providing our clients with competitive pricing and end to end
+                service.
+              </p>
+            </div>
+          </div>
+        </div>
 
-            <h3 className="mb-4 font-bold text-2xl">The Team</h3>
+        <div className="bg-white md:py-14 py-8">
+          <div className="container md:-mt-32">
+            <div className="md:grid md:grid-cols-3 gap-6">
+              <div className="p-4 text-center md:mb-0 mb-4">
+                <div className="bg-blue-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
+                  <span className="text-4xl text-white">
+                    <FontAwesomeIcon icon={["fas", "route"]} />
+                  </span>
+                </div>
+                <h4 className="font-bold text-2xl mb-2 text-black">Vision</h4>
 
-            <p className="mb-4 leading-6">
-              We offer site{" "}
-              <span className="text-primary font-semibold">Survey</span> and{" "}
-              <span className="text-primary font-semibold">Identification</span>{" "}
-              of potential risks our clients/prospective clients may be exposed
-              to, which may cause property damage or loss,law suits, loss of
-              business income, injuries and death.
-            </p>
+                <p className="md:text-lg">
+                  To be Africa's preferred insurance consultant leveraging on
+                  clients specific needs and innovation.
+                </p>
+              </div>
 
-            <p className="mb-6 leading-6">
-              Based on the recommendations from the survey, we advise the client
-              on the suitable insurance product(s) and a comparison of the
-              premium rate(s) from the insurance companies.
-            </p>
+              <div className="p-4 text-center md:mb-0 mb-4">
+                <div className="bg-blue-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
+                  <span className="text-4xl text-white">
+                    <FontAwesomeIcon icon={["fas", "bullseye"]} />
+                  </span>
+                </div>
+                <h4 className="font-bold text-2xl mb-2 text-black">Mission</h4>
 
-            <div className="hidden">
-              <Link href="/#quote-form">
-                <a className="btn inline-block">
-                  <span>Learn more</span>
-                </a>
-              </Link>
+                <p className="md:text-lg">
+                  Create value addition for our clients through exceptional, end
+                  to end service and competitive pricing.
+                </p>
+              </div>
+
+              <div className="p-4 text-center md:mb-0 mb-4">
+                <div className="bg-blue-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
+                  <span className="text-4xl text-white">
+                    <FontAwesomeIcon icon={["fas", "list"]} />
+                  </span>
+                </div>
+                <h4 className="font-bold text-2xl mb-2 text-black">
+                  Core Values
+                </h4>
+
+                <p className="md:text-lg">
+                  Responsive
+                  <br />
+                  Intuitive
+                  <br />
+                  Sincere
+                  <br />
+                  Efficient
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section md:pt-14 pt-8 bg-green-50" id="team">
+        <div className="container pb-4">
+          <div className="pt-6 pb-4">
+            <h2 className="mb-6 text-center font-extrabold md:text-5xl text-3xl">
+              The Team
+            </h2>
+          </div>
+        </div>
+
+        <div className="bg-white md:pb-14 pb-8 pt-8">
+          <div className="container">
+            <div className="md:grid md:grid-cols-5 gap-2">
+              <div className="p-4 text-center md:mb-0 mb-4">
+                <div className="bg-blue-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
+                  <span className="text-4xl text-white">
+                    <FontAwesomeIcon icon={["fas", "user"]} />
+                  </span>
+                </div>
+                <p className="text-base mb-1 text-black">Gabriel G. Kangethe</p>
+                <p className="text-sm mb-2 text-black">
+                  ACIM | MBA | AIIK | BCOM
+                </p>
+                <h3 className="font-bold text-sm mb-2 text-black">
+                  Managing Director &amp; PO
+                </h3>
+              </div>
+
+              <div className="p-4 text-center md:mb-0 mb-4">
+                <div className="bg-blue-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
+                  <span className="text-4xl text-white">
+                    <FontAwesomeIcon icon={["fas", "user"]} />
+                  </span>
+                </div>
+                <p className="text-base mb-1 text-black">David K. Mwangi</p>
+                <p className="text-sm mb-2 text-black">
+                  BBM- Risk &amp; Insurance
+                </p>
+                <h3 className="font-bold text-sm mb-2 text-black">
+                  Asst. Business Development Manager
+                </h3>
+              </div>
+
+              <div className="p-4 text-center md:mb-0 mb-4">
+                <div className="bg-blue-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
+                  <span className="text-4xl text-white">
+                    <FontAwesomeIcon icon={["fas", "user"]} />
+                  </span>
+                </div>
+                <p className="text-base mb-1 text-black">Aisha L. Munyao</p>
+                <p className="text-sm mb-2 text-black">AIIK* | BBM</p>
+                <h3 className="font-bold text-sm mb-2 text-black">
+                  Claims &amp; Underwriting Manager
+                </h3>
+              </div>
+
+              <div className="p-4 text-center md:mb-0 mb-4">
+                <div className="bg-blue-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
+                  <span className="text-4xl text-white">
+                    <FontAwesomeIcon icon={["fas", "user"]} />
+                  </span>
+                </div>
+                <p className="text-base mb-1 text-black">Juliet A. Owitti</p>
+                <p className="text-sm mb-2 text-black">
+                  M. Psych* | IHRM | BCOM
+                </p>
+                <h3 className="font-bold text-sm mb-2 text-black">
+                  Manager Admin &amp; Human Resource Manager
+                </h3>
+              </div>
+
+              <div className="p-4 text-center md:mb-0 mb-4">
+                <div className="bg-blue-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
+                  <span className="text-4xl text-white">
+                    <FontAwesomeIcon icon={["fas", "user"]} />
+                  </span>
+                </div>
+                <p className="text-base mb-1 text-black">Francis K. Murage</p>
+                <p className="text-sm mb-2 text-black">BCOM | CPA (K)</p>
+                <h3 className="font-bold text-sm mb-2 text-black">
+                  Finance Manager
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="section md:pt-14 pt-8 bg-blue-50"
+        id="clients-partners"
+      >
+        <div className="container pb-4">
+          <div className="pt-6 pb-4">
+            <h2 className="mb-6 text-center font-extrabold md:text-5xl text-3xl">
+              Clients &amp; Partners
+            </h2>
+
+            <div className=" text-center">
+              <p className="mb-3 leading-6">
+                We have strong relationships with our Clients &amp; Partners
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white md:pb-14 pb-8 pt-8">
+          <div className="container">
+            <div className="md:grid md:grid-cols-2 gap-4">
+              <div className="p-4 text-center md:mb-0 mb-4">
+                <h4 className="text-xl leading-5 mb-8 font-extrabold">
+                  Clients
+                </h4>
+
+                <div className="md:w-9/12 mx-auto w-full">
+                  <Image src={clients} alt="Our Clients" className="mx-auto" />
+                </div>
+              </div>
+
+              <div className="p-4 text-center md:mb-0 mb-4">
+                <h4 className="text-xl leading-5 mb-8 font-extrabold">
+                  Partners
+                </h4>
+
+                <div className="md:w-9/12 mx-auto w-full">
+                  <Image
+                    src={partners}
+                    alt="Our Partners"
+                    className="mx-auto"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -369,7 +532,7 @@ export default function Home(): ReactElement {
                 className="shadow-lg bg-white md:px-8 md:py-10 py-6 px-4"
               >
                 <h2 className="md:mb-8 mb-6 font-bold md:text-3xl text-xl">
-                  Request for quote
+                  Request for quote/consultation
                 </h2>
 
                 <div className="md:grid md:grid-cols-2 md:gap-4 mb-4">

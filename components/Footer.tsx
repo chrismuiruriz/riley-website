@@ -45,7 +45,7 @@ export default function Footer(props): ReactElement {
           <div className="col md:mb-0 mb-6 md:pr-4">
             <div className="content">
               <h4 className="mb-4 text-white font-bold md:text-lg text-md">
-                Riley Insurance Consultants &amp; Agency LTD
+                Riley Insurance Consultants &amp; Agency Ltd
               </h4>
               <p className="text-gray-400 mb-4 leading-6">
                 Creating value addition.

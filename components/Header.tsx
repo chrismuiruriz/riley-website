@@ -48,11 +48,26 @@ export default function Header(props): ReactElement {
         <div className="header-top">
           <div className="container">
             <div>
-              <a href="/">Royal Offices, 18A, Westlands, Nairobi, Kenya</a>
+              <a href="/">
+                <span className="text-xs inline-block mr-1">
+                  <FontAwesomeIcon icon={["fas", "map-marker-alt"]} />{" "}
+                </span>
+                Royal Offices, 18A, Westlands, Nairobi, Kenya
+              </a>
 
-              <a href="/">info@rileyconsultants.co.ke</a>
+              <a href="/">
+                <span className="text-xs inline-block mr-1">
+                  <FontAwesomeIcon icon={["fas", "phone-alt"]} />{" "}
+                </span>
+                info@rileyconsultants.co.ke
+              </a>
 
-              <a href="tel:+254797313151">+254 792 486 591</a>
+              <a href="tel:+254797313151">
+                <span className="text-xs inline-block mr-1">
+                  <FontAwesomeIcon icon={["fas", "envelope"]} />{" "}
+                </span>
+                +254 792 486 591
+              </a>
             </div>
             <div>
               <a href="/">FAQs</a>
@@ -121,14 +136,14 @@ export default function Header(props): ReactElement {
                     <li>
                       <Link href="/#insurance-solutions">
                         <a className="transition-all">
-                          <span>Partners</span>
+                          <span>Careers</span>
                         </a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/#insurance-solutions">
                         <a className="transition-all">
-                          <span>Clients</span>
+                          <span>Clients &amp; Partners</span>
                         </a>
                       </Link>
                     </li>
@@ -174,10 +189,7 @@ export default function Header(props): ReactElement {
                 <li>
                   <Link href="/#quote-form">
                     <a className="transition-all">
-                      <span>Portals</span>
-                      <span className="inline-block ml-2">
-                        <FontAwesomeIcon icon={["fas", "caret-down"]} />
-                      </span>
+                      <span>Client Portal</span>
                     </a>
                   </Link>
                 </li>

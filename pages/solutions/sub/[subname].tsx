@@ -6,22 +6,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CustomHead from "../../../components/CustomHead";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
+import products from "../../services/Products.json";
 
 export default function SubService(): ReactElement {
   const router = useRouter();
 
+  let counter = 0;
+
   const { subname } = router.query;
 
-  const [activeSolution, setActiveSolution] = useState("Business");
+  const [activeSolution, setActiveSolution] = useState("");
+
+  const [productList, setProductList] = useState([]);
 
   //useEffect
   useEffect(() => {
-    if (subname == "individual") {
-      setActiveSolution("Individual");
-    } else {
-      setActiveSolution("Business");
-    }
+    const sol: any = subname;
+
+    setActiveSolution(decodeURIComponent(sol));
   });
+
+  const solutions = products.filter(
+    (product) => product.solutions == activeSolution
+  );
+
+  // /setProductList(solutions);
 
   return (
     <>
@@ -43,7 +52,7 @@ export default function SubService(): ReactElement {
 
             <p className="text-white text-xl md:text-base mb-6 md:mb-6 md:leading-9">
               Home <FontAwesomeIcon icon={["fas", "angle-right"]} /> Solutions{" "}
-              <FontAwesomeIcon icon={["fas", "angle-right"]} /> Individual
+              <FontAwesomeIcon icon={["fas", "angle-right"]} /> {activeSolution}
             </p>
           </div>
         </div>
@@ -52,29 +61,33 @@ export default function SubService(): ReactElement {
       <section className="section md:py-14 py-8 bg-gray-100" id="about-us">
         <div className="container grid md:grid-cols-3 md:gap-12">
           {/* Loops will start here  */}
-          <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-            <img
-              className="w-full"
-              src="https://i1.wp.com/assurena.stylusthemes.com/wp-content/uploads/2020/11/family-insurance.jpg?ssl=1"
-              alt="Sunset in the mountains"
-            />
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-              <p className="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                exercitationem praesentium nihil.
-              </p>
-            </div>
-            <div className="px-6 pt-2 pb-2">
-              <Link href={"/#form"}>
-                <a className="inline-block py-1 text-sm font-semibold text-blue-400 mr-2 mb-2">
-                  <span className="mr-2 inline-block">Get a quote</span>
-                  <FontAwesomeIcon icon={["fas", "arrow-right"]} />
-                </a>
-              </Link>
-            </div>
-          </div>
+
+          {productList.map((item, idx) => {
+            return (
+              <div
+                key={idx}
+                className="max-w-sm rounded overflow-hidden shadow-lg bg-white mb-8 md:mb-0"
+              >
+                <img
+                  className="w-full"
+                  src="https://i1.wp.com/assurena.stylusthemes.com/wp-content/uploads/2020/11/family-insurance.jpg?ssl=1"
+                  alt="Sunset in the mountains"
+                />
+                <div className="px-6 py-4">
+                  <div className="font-bold text-xl mb-2">{item.solutions}</div>
+                  <p className="text-gray-700 text-base">{item.description}</p>
+                </div>
+                <div className="px-6 pt-2 pb-2">
+                  <Link href="/#quote-form">
+                    <a className="inline-block py-1 text-sm font-semibold text-blue-400 mr-2 mb-2">
+                      <span className="mr-2 inline-block">Get a quote</span>
+                      <FontAwesomeIcon icon={["fas", "arrow-right"]} />
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
 

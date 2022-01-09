@@ -49,7 +49,7 @@ export default function Service(): ReactElement {
 
             <p className="text-white text-xl md:text-base mb-6 md:mb-6 md:leading-9">
               Home <FontAwesomeIcon icon={["fas", "angle-right"]} /> Solutions{" "}
-              <FontAwesomeIcon icon={["fas", "angle-right"]} /> Individual
+              <FontAwesomeIcon icon={["fas", "angle-right"]} /> {activeSolution}
             </p>
           </div>
         </div>
@@ -75,12 +75,27 @@ export default function Service(): ReactElement {
                   <p className="text-gray-700 text-base">{item.description}</p>
                 </div>
                 <div className="px-6 pt-2 pb-2">
-                  <Link href="/#quote-form">
-                    <a className="inline-block py-1 text-sm font-semibold text-blue-400 mr-2 mb-2">
-                      <span className="mr-2 inline-block">Get a quote</span>
-                      <FontAwesomeIcon icon={["fas", "arrow-right"]} />
-                    </a>
-                  </Link>
+                  {item.subSolutions.length > 0 && (
+                    <Link
+                      href={`/solutions/sub/${encodeURIComponent(
+                        item.solutions
+                      )}`}
+                    >
+                      <a className="inline-block py-1 text-sm font-semibold text-blue-400 mr-2 mb-2">
+                        <span className="mr-2 inline-block">View Products</span>
+                        <FontAwesomeIcon icon={["fas", "arrow-right"]} />
+                      </a>
+                    </Link>
+                  )}
+
+                  {item.subSolutions.length < 1 && (
+                    <Link href="/#quote-form">
+                      <a className="inline-block py-1 text-sm font-semibold text-blue-400 mr-2 mb-2">
+                        <span className="mr-2 inline-block">Get a quote</span>
+                        <FontAwesomeIcon icon={["fas", "arrow-right"]} />
+                      </a>
+                    </Link>
+                  )}
                 </div>
               </div>
             );

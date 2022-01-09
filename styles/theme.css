@@ -106,7 +106,7 @@ body {
 }
 
 .header-bottom .container .header-bottom-right ul li {
-  @apply mx-2 px-4 relative mb-4 md:mb-0;
+  @apply mx-2 px-2 relative mb-4 md:mb-0;
 }
 
 .header-bottom .container .header-bottom-right ul li a {
