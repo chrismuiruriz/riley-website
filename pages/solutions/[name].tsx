@@ -65,11 +65,11 @@ export default function Service(): ReactElement {
                 key={idx}
                 className="max-w-sm rounded overflow-hidden shadow-lg bg-white mb-8 md:mb-0"
               >
-                <img
-                  className="w-full"
-                  src="https://i1.wp.com/assurena.stylusthemes.com/wp-content/uploads/2020/11/family-insurance.jpg?ssl=1"
-                  alt="Sunset in the mountains"
-                />
+                <div className="flex items-center p-6 pb-0">
+                  <div className="text-6xl">
+                    <FontAwesomeIcon icon={["fas", "plus-square"]} />
+                  </div>
+                </div>
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">{item.solutions}</div>
                   <p className="text-gray-700 text-base">{item.description}</p>

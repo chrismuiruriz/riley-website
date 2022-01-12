@@ -120,14 +120,14 @@ export default function Header(props): ReactElement {
 
                   <ul className="dropdown">
                     <li>
-                      <Link href="/#about-us">
+                      <Link href="/#journey">
                         <a className="transition-all">
                           <span>Our Journey</span>
                         </a>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/#insurance-solutions">
+                      <Link href="/#team">
                         <a className="transition-all">
                           <span>The Team</span>
                         </a>
@@ -141,7 +141,7 @@ export default function Header(props): ReactElement {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/#insurance-solutions">
+                      <Link href="/#clients-partners">
                         <a className="transition-all">
                           <span>Clients &amp; Partners</span>
                         </a>
@@ -180,7 +180,7 @@ export default function Header(props): ReactElement {
                   {/* Dropdown ends */}
                 </li>
                 <li>
-                  <Link href="/#quote-form">
+                  <Link href="/#consultancy">
                     <a className="transition-all">
                       <span>Consultancy</span>
                     </a>
