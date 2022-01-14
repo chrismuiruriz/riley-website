@@ -2,13 +2,13 @@
   {
     "solutions": "All Risks",
     "subSolutions": [],
-    "type": "All",
+    "type": "business",
     "description": "This cover is ideal for office/home portable electronic items. It covers accidental loss and damage caused by theft, riot and strike and any other cause not excluded under the policy."
   },
   {
     "solutions": "Aviation",
     "subSolutions": [],
-    "type": "All",
+    "type": "business",
     "description": "Provides coverage for hull losses or damage, liability for passenger injuries and third-party damage caused by aircraft accidents."
   },
   {
@@ -17,125 +17,125 @@
       {
         "solutions": "Bid/Tender Bonds",
         "subSolutions": "",
-        "type": "All",
+        "type": "all",
         "description": "Issued as part of the tender bidding process to provide guarantee to the awarding entity."
       },
       {
         "solutions": "Immigration Bonds",
         "subSolutions": "",
-        "type": "All",
+        "type": "all",
         "description": "A guarantee of payment to the government as security in the unlikely event there is need for deportation of the insured."
       },
       {
         "solutions": "Performance Bonds",
         "subSolutions": "",
-        "type": "All",
+        "type": "all",
         "description": "Issued as a surety for due performance of a contract, such as construction and supplies contracts."
       },
       {
         "solutions": "Advance Payment Bonds",
         "subSolutions": "",
-        "type": "All",
+        "type": "all",
         "description": "Guarantee given when money is paid before goods/services are rendered by the supplier/contractor."
       }
     ],
-    "type": "All",
+    "type": "business",
     "description": "Provides indemnification for the employer in case the insured is unable to meet the contractual liability. Bonds vary from customs, bid, supplies, performance and advance payment guarantee."
   },
   {
     "solutions": "Burglary/Theft",
     "subSolutions": [],
-    "type": "All",
+    "type": "all",
     "description": "Policy provides protection against loss or damage to property through entry into or exit from a premises gained forcibly or violently. Assets such as equipment, furniture, fixtures & fittings and stock in trade."
   },
   {
     "solutions": "Business Interruption (Loss of Profits)",
     "subSolutions": [],
-    "type": "All",
+    "type": "business",
     "description": "Incase of a fire, normal business operations in the firm may be interrupted, this will affect the profits. In some cases, additional costs may be incurred in order to minimize losses. This policy takes care of such situations by reducing the financial burden when operations are interrupted."
   },
   {
     "solutions": "Carrier Liability",
     "subSolutions": [],
-    "type": "All",
+    "type": "business",
     "description": "Protects against legal liability as well as defense cost and expenses when you transport and store the goods and merchandise in your care, custody or control."
   },
   {
     "solutions": "Contractors All Risks/ Erection All Risk",
     "subSolutions": [],
-    "type": "All",
+    "type": "business",
     "description": "Provides cover for the contractor against loss or damage to the contract works, machinery and plant and third party liability arising out of and during performance of the contract."
   },
   {
     "solutions": "Contractors Plant And Machinery",
     "subSolutions": [],
-    "type": "All",
+    "type": "all",
     "description": "Covers different types of machinery used for handling material or construction. Policy covers sudden, accidental, external damage to the insured machinery due to any cause other than those specifically excluded in the policy."
   },
   {
     "solutions": "Directors And Officers Liability",
     "subSolutions": [],
-    "type": "All",
+    "type": "business",
     "description": "Protects the personal assets of corporate directors and officers, and their spouses, in the event they are personally sued by employees, vendors, competitors, investors, customers, or other parties, for actual or alleged wrongful acts in managing a company."
   },
   {
     "solutions": "Domestic Package",
     "subSolutions": [],
-    "type": "All",
+    "type": "individual",
     "description": "Provides cover for the dwelling house, electronic items, jewelries, household contents and other personal belongings against fire, natural catastrophes and theft. It also covers personal liabilities of the insured to third parties and provides compensation to domestic servants for death or injury in the course of duty."
   },
   {
     "solutions": "Electronic Equipment",
     "subSolutions": [],
-    "type": "All",
+    "type": "business",
     "description": "This policy provides indemnity to electronic equipment against sudden and unforeseen physical loss or damage to the equipment in a manner necessitating repair or replacement including theft, transit risks and cover to laptops on a worldwide basis."
   },
   {
     "solutions": "Employers Liability",
     "subSolutions": [],
-    "type": "All",
+    "type": "business",
     "description": "This cover takes care of legal liabilities that arise when the employee sues their employer."
   },
   {
     "solutions": "Fidelity Guarantee",
     "subSolutions": [],
-    "type": "All",
+    "type": "business",
     "description": "This policy provides cover for losses incurred as a result of infidelity of employees. This may be in the form of loss of stocks, money or any other property of the insured."
   },
   {
     "solutions": "Fire & Perils",
     "subSolutions": [],
-    "type": "All",
+    "type": "all",
     "description": "This policy provides fire cover for loss or damage to buildings, stock, machinery, furniture, fixtures and fittings."
   },
   {
     "solutions": "Fire Consequential Losses",
     "subSolutions": [],
-    "type": "All",
+    "type": "business",
     "description": "Covers the cost of overheads and the loss of profits arising from damage such as floods, fire and allied perils including earthquake, riot, strike and civil commotion."
   },
   {
     "solutions": "Golfers Insurance",
     "subSolutions": [],
-    "type": "All",
+    "type": "individual",
     "description": "Covers loss or damage to golf equipment and personal effects including liability to third parties. The policy can be extended to cover that chance of a life time “Hole in One” which is worth celebrating."
   },
   {
     "solutions": "Goods In Transit",
     "subSolutions": [],
-    "type": "All",
+    "type": "business",
     "description": "Provides compensation to the insured if goods in transit by road, rail or any inland waterway are lost or damaged. The cover may be taken for specific consignments or on an annual basis."
   },
   {
     "solutions": "Group Personal Accident",
     "subSolutions": [],
-    "type": "All",
+    "type": "business",
     "description": "This policy is a 24 hour cover that is taken by the employer for the employees. It provides compensation for accidental death and or bodily injury. It also covers medical expenses arising from an accident as well as in the event that the insured is not able to go back to normal duties over a specified period of time."
   },
   {
     "solutions": "Key Man's Insurance",
     "subSolutions": [],
-    "type": "All",
+    "type": "business",
     "description": "This policy is purchased by the company on the life of an owner, top executives, or another individual considered critical to the busines."
   },
   {
@@ -144,47 +144,47 @@
       {
         "solutions": "Education Policy",
         "subSolutions": "",
-        "type": "All",
+        "type": "all",
         "description": "This a life assurance product specially designed as a savings tool to provide an amount of money for your child's education"
       },
       {
         "solutions": "Individual Life",
         "subSolutions": "",
-        "type": "All",
+        "type": "all",
         "description": "This policy assists the family or next of kin of the assured life in the event he/ she dies, becomes disabled or becomes critically ill."
       },
       {
         "solutions": "Group Life",
         "subSolutions": "",
-        "type": "All",
+        "type": "all",
         "description": "This policy is essential for employees of a given organisation to assist their families or next of kin in the event that the employee dies, becomes disabled or becomes critically ill."
       },
       {
         "solutions": "Last Expense",
         "subSolutions": "",
-        "type": "All",
+        "type": "all",
         "description": "Covers the cost of funeral expenses for the member, spouse, child and parents.The amount is payable within 48 hours upon notification and providing required claim documents."
       },
       {
         "solutions": "Pension - Individual/Group",
         "subSolutions": "",
-        "type": "All",
+        "type": "all",
         "description": "The policy is tax-privileged individual savings plan, designed to build a capital sum exclusively to provide retirement benefits. Contributions can be made either by individual or by employer. T"
       }
     ],
-    "type": "All",
+    "type": "all",
     "description": "Provides financial reprieve to your appointed beneficiaries in the event of your unfortunate demise."
   },
   {
     "solutions": "Machinery Breakdown",
     "subSolutions": [],
-    "type": "All",
+    "type": "business",
     "description": "Accidental Breakdown is inevitable even with the highest standard of maintenance. This policy covers damage to machinery and plant resulting from sudden unforeseen occurrences."
   },
   {
     "solutions": "Marine Insurance",
     "subSolutions": [],
-    "type": "All",
+    "type": "business",
     "description": "Provides coverage for goods damage, liability for passenger injuries and third-party damage."
   },
   {
@@ -193,41 +193,41 @@
       {
         "solutions": "Individual",
         "subSolutions": "",
-        "type": "All",
+        "type": "all",
         "description": "Provides inpatient, outpatient, optical, dental, maternity and general check up for the insured. The cover can be extended to cover Covid-19 related expense."
       },
       {
         "solutions": "Family",
         "subSolutions": "",
-        "type": "All",
+        "type": "all",
         "description": "Provides inpatient, outpatient, optical, dental, maternity and general check up for the family. The cover can be extended to cover Covid-19 related expense."
       },
       {
         "solutions": "Seniors",
         "subSolutions": "Seniors",
-        "type": "All",
+        "type": "all",
         "description": "Covers has been tailored for individuals above 60 years. Provides inpatient, outpatient, optical, dental, maternity and general check up for the individuals. The cover can be extended to cover Covid-19 related expense."
       },
       {
         "solutions": "SME's",
         "subSolutions": "SME's",
-        "type": "All",
+        "type": "all",
         "description": "Provides inpatient, outpatient, optical, dental, maternity and general check up for the employees. The cover can be extended to cover Covid-19 related expense."
       },
       {
         "solutions": "Corporate",
         "subSolutions": "",
-        "type": "All",
+        "type": "all",
         "description": "Provides inpatient, outpatient, optical, dental, maternity and general check up for the employees. The cover can be extended to cover Covid-19 related expense."
       }
     ],
-    "type": "All",
+    "type": "all",
     "description": "offers access to a variety of medical services such as inpatient, outpatient, optical, dentals and maternity. The cover can be extended to cover cancer and senior's (above the age of 60 years)."
   },
   {
     "solutions": "Money Policy",
     "subSolutions": [],
-    "type": "All",
+    "type": "business",
     "description": "Provides cover for loss of money in transit, in the premises during and after business hours and damage to safes and strong rooms caused by theft or any attempt thereat."
   },
   {
@@ -236,30 +236,30 @@
       {
         "solutions": "Chauffeur Driven (Bolt/Little/Bolt)",
         "subSolutions": "",
-        "type": "All",
+        "type": "all",
         "description": "Covers accidental loss or damage to motor vehicles including the standard accessories. It also provides cover for liabilities to third parties arising out of the use of the motor vehicle."
       },
       {
         "solutions": "Institutional & School Vehicles",
         "subSolutions": "",
-        "type": "All",
+        "type": "all",
         "description": "Covers accidental loss or damage to motor vehicles including the standard accessories. It also provides cover for liabilities to third parties arising out of the use of the motor vehicle."
       },
       {
         "solutions": "Matatu",
         "subSolutions": "",
-        "type": "All",
+        "type": "all",
         "description": "Covers accidental loss or damage to motor vehicles including the standard accessories. It also provides cover for liabilities to third parties arising out of the use of the motor vehicle."
       },
       {
         "solutions": "Self Drive",
         "subSolutions": "",
-        "type": "All",
+        "type": "all",
         "description": "Covers accidental loss or damage to motor vehicles including the standard accessories. It also provides cover for liabilities to third parties arising out of the use of the motor vehicle."
       }
     ],
-    "type": "All",
-    "description": ""
+    "type": "all",
+    "description": "Covers accidental loss or damage to motor vehicles including the standard accessories. It also provides cover for liabilities to third parties arising out of the use of the motor vehicle."
   },
   {
     "solutions": "Motor Commercial",
@@ -267,23 +267,23 @@
       {
         "solutions": "General Cartage (Comprehensive/Third Party)",
         "subSolutions": "",
-        "type": "All",
+        "type": "all",
         "description": "Covers accidental loss or damage to motor vehicles including the standard accessories. It also provides cover for liabilities to third parties arising out of the use of the motor vehicle."
       },
       {
         "solutions": "Own Goods (Comprehensive/Third Party)",
         "subSolutions": "",
-        "type": "All",
+        "type": "all",
         "description": "Cover accidental loss or damage to motor vehicles including the standard accessories. It also provides cover for liabilities to third parties arising out of the use of the motor vehicle."
       },
       {
         "solutions": "Asset Cover",
         "subSolutions": "",
-        "type": "All",
+        "type": "all",
         "description": "Cover accidental loss or damage to motor vehicles including the standard accessories. It also provides cover for liabilities to third parties arising out of the use of the motor vehicle."
       }
     ],
-    "type": "All",
+    "type": "all",
     "description": "Indemnity for the Accidental Loss or Damage to the insured Vehicle and in respect of Legal Liability for damage to third party property & for death or bodily injury to third parties following the accident."
   },
   {
@@ -292,77 +292,77 @@
       {
         "solutions": "Private",
         "subSolutions": "",
-        "type": "All",
+        "type": "all",
         "description": "Cover accidental loss or damage to motor vehicles including the standard accessories. It also provides cover for liabilities to third parties arising out of the use of the motor vehicle."
       },
       {
         "solutions": "Psv",
         "subSolutions": "",
-        "type": "All",
+        "type": "all",
         "description": "Cover accidental loss or damage to motor vehicles including the standard accessories. It also provides cover for liabilities to third parties arising out of the use of the motor vehicle."
       }
     ],
-    "type": "All",
+    "type": "all",
     "description": "Indemnity for the Accidental Loss or Damage to the insured Vehicle and in respect of Legal Liability for damage to third party property & for death or bodily injury to third parties following the accident."
   },
   {
     "solutions": "Motor Private- Comprehensive/ Third Party",
     "subSolutions": [],
-    "type": "All",
+    "type": "all",
     "description": "Cover accidental loss or damage to motor vehicles including the standard accessories. It also provides cover for liabilities to third parties arising out of the use of the motor vehicle."
   },
   {
     "solutions": "Motor Trade",
     "subSolutions": [],
-    "type": "All",
+    "type": "all",
     "description": "Covers Motor Dealers Only Who Engage In Sale Of New Vehicles, Buying And Selling Vehicles, Service And Repair Of Vehicles."
   },
   {
     "solutions": "Personal Accident",
     "subSolutions": [],
-    "type": "All",
+    "type": "individual",
     "description": "Provides compensation for accidental death and or bodily injury. It also covers medical expenses arising from an accident as well as in the event that the insured is not able to go back to normal duties over a specified period of time."
   },
   {
     "solutions": "Products Liability",
     "subSolutions": [],
-    "type": "All",
+    "type": "business",
     "description": "The policy covers all sums which the insured shall be legally liable to pay for liability and legal costs and expenses arising from accidents occurring within a stated area in the course of the Insured’s business."
   },
   {
     "solutions": "Professional Indemnity",
     "subSolutions": [],
-    "type": "All",
+    "type": "all",
     "description": "Covers liability arising out of professional negligence. Caters for financial loss to the clients as a result of insured’s errors, omissions, neglect or default in the conduct of professional duty. This cover is granted to professionals for example advocates, doctors, engineers, among others."
   },
   {
     "solutions": "Public Liability",
     "subSolutions": [],
-    "type": "All",
+    "type": "business",
     "description": "The policy covers all sums which the insured shall be legally liable to pay for liability and legal costs and expenses arising from accidents to third parties within the insured business premises."
   },
   {
     "solutions": "Tankers",
     "subSolutions": [],
-    "type": "All",
+    "type": "all",
     "description": "Covers accidental loss or damage to tankers including the standard accessories. It also provides cover for liabilities to third parties arising out of the use of the motor vehicle."
   },
   {
     "solutions": "Travel Insurance",
     "subSolutions": [],
-    "type": "All",
+    "type": "all",
     "description": "Provides 24 hours emergency medical assistance, personal accident cover, compensation for travel delay and loss of traveler's property and other travel related contingencies arising during the trip."
   },
   {
     "solutions": "WIBA (Work Injury Benefits Insurance)",
     "subSolutions": [],
-    "type": "All",
+    "type": "all",
     "description": "Provides compensation for death or injury to an employee arising out of and in the course of carrying out their duties. It provides death benefits, lost wages to injured employees, as well as cost of medical care."
   },
   {
     "solutions": "WIBA Plus",
     "subSolutions": [],
-    "type": "All",
+    "type": "all",
     "description": "This an extension of WIBA to include group personal accident rendering the cover a 24 hour cover."
   }
 ]
