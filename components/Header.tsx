@@ -4,6 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import logo from "../public/riley-Insurance-logo.jpg";
 
+const imageLoader = ({ src }) => {
+  return `${src}`;
+};
+
 export default function Header(props): ReactElement {
   let isMobile = function () {
     if (typeof navigator === "undefined") {
@@ -92,6 +96,7 @@ export default function Header(props): ReactElement {
               <Link href="/">
                 <a>
                   <Image
+                    loader={imageLoader}
                     src={logo}
                     alt="Riley Insurance Consultants &amp; Agency Ltd"
                   />

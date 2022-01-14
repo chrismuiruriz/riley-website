@@ -10,6 +10,10 @@ import Image from "next/image";
 import clients from "../public/clients.png";
 import partners from "../public/partners.png";
 
+const imageLoader = ({ src }) => {
+  return `${src}`;
+};
+
 export default function Home(): ReactElement {
   const router = useRouter();
 
@@ -255,7 +259,10 @@ export default function Home(): ReactElement {
             <div className="bg absolute z-0 w-full h-full bg-opacity-50 bg-green-600"></div>
             <div className="overlay absolute top-0 left-0 h-full w-full z-10 bg-black bg-opacity-70"></div>
             <div className="md:py-10 md:px-10 py-10 px-4 relative z-20 text-white">
-              <span className="text-5xl mb-6 inline-block p-4 bg-green-500" id="consultancy">
+              <span
+                className="text-5xl mb-6 inline-block p-4 bg-green-500"
+                id="consultancy"
+              >
                 <FontAwesomeIcon icon={["fas", "shield-alt"]} />
               </span>
 
@@ -492,7 +499,12 @@ export default function Home(): ReactElement {
                 </h4>
 
                 <div className="md:w-9/12 mx-auto w-full">
-                  <Image src={clients} alt="Our Clients" className="mx-auto" />
+                  <Image
+                    loader={imageLoader}
+                    src={clients}
+                    alt="Our Clients"
+                    className="mx-auto"
+                  />
                 </div>
               </div>
 
@@ -503,6 +515,7 @@ export default function Home(): ReactElement {
 
                 <div className="md:w-9/12 mx-auto w-full">
                   <Image
+                    loader={imageLoader}
                     src={partners}
                     alt="Our Partners"
                     className="mx-auto"

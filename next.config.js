@@ -1,4 +1,7 @@
 module.exports = {
   basePath: "/revamp-2",
-  distDir: 'build',
+  distDir: "build",
+  images: {
+    loader: "custom",
+  },
 };

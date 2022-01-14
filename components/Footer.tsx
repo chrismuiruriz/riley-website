@@ -6,6 +6,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import loadingIcon from "../public/apple-touch-icon.png";
 
+const imageLoader = ({ src }) => {
+  return `${src}`;
+};
+
 export default function Footer(props): ReactElement {
   const [showLoader, setShowLoader] = useState(true);
 
@@ -150,7 +154,13 @@ export default function Footer(props): ReactElement {
 
       {showLoader && (
         <div className="loader fixed top-0 left-0 w-full h-screen bg-white z-50 flex items-center justify-center">
-          <Image width={64} height={64} src={loadingIcon} alt="Loading..." />
+          <Image
+            loader={imageLoader}
+            width={64}
+            height={64}
+            src={loadingIcon}
+            alt="Loading..."
+          />
         </div>
       )}
     </>
