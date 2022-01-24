@@ -6,25 +6,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CustomHead from "../components/CustomHead";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Image from "next/image";
-import clients from "../public/clients.png";
-import partners from "../public/partners.png";
 import Logos from "../components/Logos";
-import Stats from "../components/Stats";
 import ConsultationForm from "../components/ConsultationForm";
 
 export default function Home(): ReactElement {
   const router = useRouter();
 
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-
   const handleTileClick = (productIndex: number) => {
     router.push("/#quote-form");
-  };
-
-  const handleFormSubmit = (e: any) => {
-    e.preventDefault();
-    setIsFormSubmitted(true);
   };
 
   return (
