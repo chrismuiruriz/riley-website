@@ -233,3 +233,12 @@ body {
 .bg-line-h {
   line-height: 1.1;
 }
+
+.slick-prev, .slick-next {
+  background-color: #cbddfd !important;
+}
+
+.slick-initialized .slick-track {
+  display: flex;
+  align-items: center;
+}

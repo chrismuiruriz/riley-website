@@ -31,37 +31,100 @@ export default function Logos() {
         focusOnSelect={true}
         slidesToScroll={1}
         autoplay={true}
-        className="flex items-center"
+        arrows={true}
       >
-        <Image src={aar} className="object-contain h-48 w-96" width={150} />
+        <div>
+          <Image src={aar} className="object-contain h-48 w-96" width={150} />
+        </div>
 
-        <Image src={adventure} className="object-contain h-48 w-96" width={150} />
+        <div>
+          <Image
+            src={adventure}
+            className="object-contain h-48 w-96"
+            width={150}
+          />
+        </div>
 
-        <Image src={allen} className="object-contain h-48 w-96" width={150} />
+        <div>
+          <Image src={allen} className="object-contain h-48 w-96" width={150} />
+        </div>
 
-        <Image src={cic} className="object-contain h-48 w-96" width={150} />
+        <div>
+          <Image src={cic} className="object-contain h-48 w-96" width={150} />
+        </div>
 
-        <Image src={concord} className="object-contain h-48 w-96" width={150} />
+        <div>
+          <Image
+            src={concord}
+            className="object-contain h-48 w-96"
+            width={150}
+          />
+        </div>
 
-        <Image src={heritage} className="object-contain h-48 w-96" width={150} />
+        <div>
+          <Image
+            src={heritage}
+            className="object-contain h-48 w-96"
+            width={150}
+          />
+        </div>
 
-        <Image src={jcc} className="object-contain h-48 w-96" width={150} />
+        <div>
+          <Image src={jcc} className="object-contain h-48 w-96" width={150} />
+        </div>
 
-        <Image src={madison} className="object-contain h-48 w-96" width={150} />
+        <div>
+          <Image
+            src={madison}
+            className="object-contain h-48 w-96"
+            width={150}
+          />
+        </div>
 
-        <Image src={mic} className="object-contain h-48 w-96" width={150} />
+        <div>
+          <Image src={mic} className="object-contain h-48 w-96" width={150} />
+        </div>
 
-        <Image src={occidental} className="object-contain h-48 w-96" width={150} />
+        <div>
+          {" "}
+          <Image
+            src={occidental}
+            className="object-contain h-48 w-96"
+            width={150}
+          />
+        </div>
 
-        <Image src={pioneer} className="object-contain h-48 w-96" width={150} />
+        <div>
+          <Image
+            src={pioneer}
+            className="object-contain h-48 w-96"
+            width={150}
+          />
+        </div>
 
-        <Image src={reinit} className="object-contain h-48 w-96" width={150} />
+        <div>
+          <Image
+            src={reinit}
+            className="object-contain h-48 w-96"
+            width={150}
+          />
+        </div>
 
-        <Image src={rochem} className="object-contain h-48 w-96" width={150} />
+        <div>
+          <Image
+            src={rochem}
+            className="object-contain h-48 w-96"
+            width={150}
+          />
+        </div>
 
-        <Image src={savvy} className="object-contain h-48 w-96" width={150} />
+        <div>
+          <Image src={savvy} className="object-contain h-48 w-96" width={150} />
+        </div>
 
-        <Image src={uap} className="object-contain h-48 w-96" width={150} />
+        <div>
+          <Image src={uap} className="object-contain h-48 w-96" width={150} />
+        </div>
       </Slider>
     </div>
   );
