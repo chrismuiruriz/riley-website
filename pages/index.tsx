@@ -471,7 +471,7 @@ export default function Home(): ReactElement {
               <div className="p-4 text-center md:mb-0 mb-4">
                 <h3 className="font-bold text-2xl mb-2">Premiums</h3>
 
-                <div className="bg-blue-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
+                <div className="bg-blue-400 w-44 h-44 rounded-full my-4 inline-flex items-center justify-center">
                   <span className="text-2xl text-white">
                     <h3 className="font-bold mb-2">250M+</h3>
                   </span>
@@ -481,7 +481,7 @@ export default function Home(): ReactElement {
               <div className="p-4 text-center md:mb-0 mb-4">
                 <h3 className="font-bold text-2xl mb-2">Insured</h3>
 
-                <div className="bg-blue-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
+                <div className="bg-blue-400 w-44 h-44 rounded-full my-4 inline-flex items-center justify-center">
                   <span className="text-2xl text-white">
                     <h3 className="font-bold mb-2">1000+</h3>
                   </span>
@@ -491,7 +491,7 @@ export default function Home(): ReactElement {
               <div className="p-4 text-center md:mb-0 mb-4">
                 <h3 className="font-bold text-2xl mb-2">Happy Clients</h3>
 
-                <div className="bg-blue-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
+                <div className="bg-blue-400 w-44 h-44 rounded-full my-4 inline-flex items-center justify-center">
                   <span className="text-2xl text-white">
                     <h3 className="font-bold mb-2">200+</h3>
                   </span>
