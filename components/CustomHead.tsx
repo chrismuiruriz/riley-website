@@ -4,6 +4,10 @@ import appleTouchIcon from "../public/apple-touch-icon.png";
 import favicon32 from "../public/favicon-32x32.png";
 import favicon16 from "../public/favicon-16x16.png";
 
+const imageLoader = ({ src }) => {
+  return `${src}`;
+};
+
 export default function CustomHead(props): ReactElement {
   const description =
     "We make buying insurance easier by showing you the best options available and helping you find the perfect policy at a great price.";

@@ -96,6 +96,7 @@ export default function Header(props): ReactElement {
               <Link href="/">
                 <a>
                   <Image
+                    unoptimized={true}
                     loader={imageLoader}
                     src={logo}
                     alt="Riley Insurance Consultants &amp; Agency Ltd"

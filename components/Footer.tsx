@@ -155,6 +155,7 @@ export default function Footer(props): ReactElement {
       {showLoader && (
         <div className="loader fixed top-0 left-0 w-full h-screen bg-white z-50 flex items-center justify-center">
           <Image
+            unoptimized={true}
             loader={imageLoader}
             width={64}
             height={64}

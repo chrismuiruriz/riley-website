@@ -19,6 +19,10 @@ import rochem from "../public/partners/rochem.png";
 import savvy from "../public/partners/savvy.png";
 import uap from "../public/partners/uap.png";
 
+const imageLoader = ({ src }) => {
+  return `${src}`;
+};
+
 export default function Logos() {
   const [nav2, setNav2] = useState();
 
@@ -34,11 +38,19 @@ export default function Logos() {
         arrows={true}
       >
         <div>
-          <Image src={aar} className="object-contain h-48 w-96" width={150} />
+          <Image
+            unoptimized={true}
+            loader={imageLoader}
+            src={aar}
+            className="object-contain h-48 w-96"
+            width={150}
+          />
         </div>
 
         <div>
           <Image
+            unoptimized={true}
+            loader={imageLoader}
             src={adventure}
             className="object-contain h-48 w-96"
             width={150}
@@ -46,15 +58,29 @@ export default function Logos() {
         </div>
 
         <div>
-          <Image src={allen} className="object-contain h-48 w-96" width={150} />
-        </div>
-
-        <div>
-          <Image src={cic} className="object-contain h-48 w-96" width={150} />
+          <Image
+            unoptimized={true}
+            loader={imageLoader}
+            src={allen}
+            className="object-contain h-48 w-96"
+            width={150}
+          />
         </div>
 
         <div>
           <Image
+            unoptimized={true}
+            loader={imageLoader}
+            src={cic}
+            className="object-contain h-48 w-96"
+            width={150}
+          />
+        </div>
+
+        <div>
+          <Image
+            unoptimized={true}
+            loader={imageLoader}
             src={concord}
             className="object-contain h-48 w-96"
             width={150}
@@ -63,6 +89,8 @@ export default function Logos() {
 
         <div>
           <Image
+            unoptimized={true}
+            loader={imageLoader}
             src={heritage}
             className="object-contain h-48 w-96"
             width={150}
@@ -70,11 +98,19 @@ export default function Logos() {
         </div>
 
         <div>
-          <Image src={jcc} className="object-contain h-48 w-96" width={150} />
+          <Image
+            unoptimized={true}
+            loader={imageLoader}
+            src={jcc}
+            className="object-contain h-48 w-96"
+            width={150}
+          />
         </div>
 
         <div>
           <Image
+            unoptimized={true}
+            loader={imageLoader}
             src={madison}
             className="object-contain h-48 w-96"
             width={150}
@@ -82,12 +118,20 @@ export default function Logos() {
         </div>
 
         <div>
-          <Image src={mic} className="object-contain h-48 w-96" width={150} />
+          <Image
+            unoptimized={true}
+            loader={imageLoader}
+            src={mic}
+            className="object-contain h-48 w-96"
+            width={150}
+          />
         </div>
 
         <div>
           {" "}
           <Image
+            unoptimized={true}
+            loader={imageLoader}
             src={occidental}
             className="object-contain h-48 w-96"
             width={150}
@@ -96,6 +140,8 @@ export default function Logos() {
 
         <div>
           <Image
+            unoptimized={true}
+            loader={imageLoader}
             src={pioneer}
             className="object-contain h-48 w-96"
             width={150}
@@ -104,6 +150,8 @@ export default function Logos() {
 
         <div>
           <Image
+            unoptimized={true}
+            loader={imageLoader}
             src={reinit}
             className="object-contain h-48 w-96"
             width={150}
@@ -112,6 +160,8 @@ export default function Logos() {
 
         <div>
           <Image
+            unoptimized={true}
+            loader={imageLoader}
             src={rochem}
             className="object-contain h-48 w-96"
             width={150}
@@ -119,11 +169,23 @@ export default function Logos() {
         </div>
 
         <div>
-          <Image src={savvy} className="object-contain h-48 w-96" width={150} />
+          <Image
+            unoptimized={true}
+            loader={imageLoader}
+            src={savvy}
+            className="object-contain h-48 w-96"
+            width={150}
+          />
         </div>
 
         <div>
-          <Image src={uap} className="object-contain h-48 w-96" width={150} />
+          <Image
+            unoptimized={true}
+            loader={imageLoader}
+            src={uap}
+            className="object-contain h-48 w-96"
+            width={150}
+          />
         </div>
       </Slider>
     </div>
