@@ -6,9 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CustomHead from "../components/CustomHead";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Image from "next/image";
-import clients from "../public/clients.png";
-import partners from "../public/partners.png";
+import Logos from "../components/Logos";
+import ConsultationForm from "../components/ConsultationForm";
 
 const imageLoader = ({ src }) => {
   return `${src}`;
@@ -17,15 +16,8 @@ const imageLoader = ({ src }) => {
 export default function Home(): ReactElement {
   const router = useRouter();
 
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-
   const handleTileClick = (productIndex: number) => {
     router.push("/#quote-form");
-  };
-
-  const handleFormSubmit = (e: any) => {
-    e.preventDefault();
-    setIsFormSubmitted(true);
   };
 
   return (
@@ -472,6 +464,49 @@ export default function Home(): ReactElement {
         </div>
       </section>
 
+      <section className="section md:pt-14 pt-8" id="stats">
+        <div className="bg-white md:pb-14 pb-8 pt-8">
+          <div className="container">
+            <div className="md:grid md:grid-cols-5 gap-2">
+              <div className="p-4 text-center md:mb-0 mb-4">
+               
+              </div>
+
+              <div className="p-4 text-center md:mb-0 mb-4">
+                <h3 className="font-bold text-2xl mb-2">Premiums</h3>
+
+                <div className="bg-blue-400 w-44 h-44 rounded-full my-4 inline-flex items-center justify-center">
+                  <span className="text-2xl text-white">
+                    <h3 className="font-bold mb-2">250M+</h3>
+                  </span>
+                </div>
+              </div>
+
+              <div className="p-4 text-center md:mb-0 mb-4">
+                <h3 className="font-bold text-2xl mb-2">Insured</h3>
+
+                <div className="bg-blue-400 w-44 h-44 rounded-full my-4 inline-flex items-center justify-center">
+                  <span className="text-2xl text-white">
+                    <h3 className="font-bold mb-2">1000+</h3>
+                  </span>
+                </div>
+              </div>
+
+              <div className="p-4 text-center md:mb-0 mb-4">
+                <h3 className="font-bold text-2xl mb-2">Happy Clients</h3>
+
+                <div className="bg-blue-400 w-44 h-44 rounded-full my-4 inline-flex items-center justify-center">
+                  <span className="text-2xl text-white">
+                    <h3 className="font-bold mb-2">200+</h3>
+                  </span>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section
         className="section md:pt-14 pt-8 bg-blue-50"
         id="clients-partners"
@@ -490,40 +525,8 @@ export default function Home(): ReactElement {
           </div>
         </div>
 
-        <div className="bg-white md:pb-14 pb-8 pt-8">
-          <div className="container">
-            <div className="md:grid md:grid-cols-2 gap-4">
-              <div className="p-4 text-center md:mb-0 mb-4">
-                <h4 className="text-xl leading-5 mb-8 font-extrabold">
-                  Clients
-                </h4>
-
-                <div className="md:w-9/12 mx-auto w-full">
-                  <Image
-                    loader={imageLoader}
-                    src={clients}
-                    alt="Our Clients"
-                    className="mx-auto"
-                  />
-                </div>
-              </div>
-
-              <div className="p-4 text-center md:mb-0 mb-4">
-                <h4 className="text-xl leading-5 mb-8 font-extrabold">
-                  Partners
-                </h4>
-
-                <div className="md:w-9/12 mx-auto w-full">
-                  <Image
-                    loader={imageLoader}
-                    src={partners}
-                    alt="Our Partners"
-                    className="mx-auto"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="bg-white md:pb-8 pt-8 pl-8 pr-8 pb-8">
+          <Logos />
         </div>
       </section>
 
@@ -538,71 +541,8 @@ export default function Home(): ReactElement {
           </h2>
 
           <div className="grid md:grid-cols-2 md:gap-12 pt-8" id="quote-form">
-            <div>
-              <form
-                onSubmit={(e) => handleFormSubmit(e)}
-                method="post"
-                className="shadow-lg bg-white md:px-8 md:py-10 py-6 px-4"
-              >
-                <h2 className="md:mb-8 mb-6 font-bold md:text-3xl text-xl">
-                  Request for quote/consultation
-                </h2>
+            <ConsultationForm />
 
-                <div className="md:grid md:grid-cols-2 md:gap-4 mb-4">
-                  <div className="mb-4 md:mb-0">
-                    <label className="inline-block mb-2 text-sm">
-                      Your Name*
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      className="w-full border border-gray-300 px-4 py-2 text-lg"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="inline-block mb-2 text-sm">Phone*</label>
-                    <input
-                      required
-                      type="tel"
-                      className="w-full border border-gray-300 px-4 py-2 text-lg"
-                    />
-                  </div>
-                </div>
-
-                <div className="mb-4">
-                  <label className="inline-block mb-2 text-sm">Email*</label>
-                  <input
-                    type="email"
-                    required
-                    className="w-full border border-gray-300 px-4 py-2 text-lg"
-                  />
-                </div>
-
-                <div className="mb-6">
-                  <label className="inline-block mb-2 text-sm">
-                    Additional Details (optional)
-                  </label>
-                  <textarea className="w-full border border-gray-300 px-4 py-2 text-lg"></textarea>
-                </div>
-
-                {isFormSubmitted && (
-                  <div className="mb-6 px-3 text-center py-2 border border-green-500 text-green-700 rounded-md text-sm">
-                    Thank you for the submission. We'll get in touch with soon.
-                  </div>
-                )}
-
-                <div className="mb-4">
-                  <button
-                    disabled={isFormSubmitted}
-                    className="btn block w-full"
-                    type="submit"
-                  >
-                    <span>Submit</span>
-                  </button>
-                </div>
-              </form>
-            </div>
             <div className="py-6">
               <h4 className="mb-4 text-primary font-bold md:text-xl text-lg">
                 Client Services
