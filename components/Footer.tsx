@@ -51,22 +51,22 @@ export default function Footer(props): ReactElement {
               <h4 className="mb-4 text-white font-bold md:text-lg text-md">
                 Riley Insurance Consultants &amp; Agency Ltd
               </h4>
-              <p className="text-gray-400 mb-4 leading-6">
-                Creating value addition.
-              </p>
 
               <div className="text-gray-400">
                 <p className="md:flex items-center mb-3 text-sm">
                   <span className="text-white inline-block mr-3">
                     <FontAwesomeIcon icon={["fas", "map-marker-alt"]} />
                   </span>{" "}
-                  <span>Royal Offices, 18A, Westlands, Nairobi, Kenya</span>
+                  <span>
+                    Royal Offices, 18A, Westlands, <br />
+                    Nairobi, Kenya
+                  </span>
                 </p>
                 <p className="md:flex items-center mb-3 text-sm">
                   <span className="text-white inline-block mr-3">
                     <FontAwesomeIcon icon={["fas", "phone-alt"]} />
                   </span>{" "}
-                  <span>+254 797 313 151</span>
+                  <span>+254 792 486 591</span>
                 </p>
                 <p className="md:flex items-center text-sm">
                   <span className="text-white inline-block mr-3">
@@ -77,7 +77,7 @@ export default function Footer(props): ReactElement {
               </div>
             </div>
           </div>
-          <div className="col md:mb-0 mb-6">
+          <div className="col md:mb-0 mb-6 md:ml-20">
             <div className="content">
               <h4 className="mb-4 text-white font-bold md:text-lg text-md">
                 Services
@@ -114,32 +114,50 @@ export default function Footer(props): ReactElement {
                 <p className="flex justify-between items-center mb-2">
                   <span>Monday</span>{" "}
                   <span className="flex-1 mx-4 bg-gray-600 h-px">&nbsp;</span>{" "}
-                  <span>8:00 - 5:00</span>
+                  <span>
+                    8:00 <span className="text-sm"> am</span> - 5:00{" "}
+                    <span className="text-sm">pm</span>
+                  </span>
                 </p>
                 <p className="flex justify-between items-center mb-2">
                   <span>Tuesday</span>{" "}
                   <span className="flex-1 mx-4 bg-gray-600 h-px">&nbsp;</span>{" "}
-                  <span>8:00 - 5:00</span>
+                  <span>
+                    8:00 <span className="text-sm"> am</span> - 5:00{" "}
+                    <span className="text-sm">pm</span>
+                  </span>
                 </p>
                 <p className="flex justify-between items-center mb-2">
                   <span>Wednesday</span>{" "}
                   <span className="flex-1 mx-4 bg-gray-600 h-px">&nbsp;</span>{" "}
-                  <span>8:00 - 5:00</span>
+                  <span>
+                    8:00 <span className="text-sm"> am</span> - 5:00{" "}
+                    <span className="text-sm">pm</span>
+                  </span>
                 </p>
                 <p className="flex justify-between items-center mb-2">
                   <span>Thursday</span>{" "}
                   <span className="flex-1 mx-4 bg-gray-600 h-px">&nbsp;</span>{" "}
-                  <span>8:00 - 5:00</span>
+                  <span>
+                    8:00 <span className="text-sm"> am</span> - 5:00{" "}
+                    <span className="text-sm">pm</span>
+                  </span>
                 </p>
                 <p className="flex justify-between items-center mb-2">
                   <span>Friday</span>{" "}
                   <span className="flex-1 mx-4 bg-gray-600 h-px">&nbsp;</span>{" "}
-                  <span>8:00 - 5:00</span>
+                  <span>
+                    8:00 <span className="text-sm"> am</span> - 5:00{" "}
+                    <span className="text-sm">pm</span>
+                  </span>
                 </p>
                 <p className="flex justify-between items-center mb-2">
                   <span>Saturday</span>{" "}
                   <span className="flex-1 mx-4 bg-gray-600 h-px">&nbsp;</span>{" "}
-                  <span>9:00 - 3:00</span>
+                  <span>
+                    9:00 <span className="text-sm"> am</span> - 3:00{" "}
+                    <span className="text-sm">pm</span>
+                  </span>
                 </p>
                 <p className="flex justify-between items-center mb-2">
                   <span>Sunday</span>{" "}
@@ -149,6 +167,10 @@ export default function Footer(props): ReactElement {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="text-center pt-8 text-w text-sm text-gray-400">
+          Regulated By Insurance Regulatory Authority
         </div>
       </footer>
 

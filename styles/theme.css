@@ -226,7 +226,7 @@ body {
 }
 
 .hero-bg {
-  background-image: url("https://assurena.stylusthemes.com/wp-content/uploads/2020/10/home3-slider-5.jpg");
+  background-image: url("../public/home3-slider-5.jpg");
   @apply absolute top-0 left-0 h-full bottom-0 bg-cover bg-center bg-no-repeat w-full;
 }
 
@@ -234,11 +234,61 @@ body {
   line-height: 1.1;
 }
 
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
   background-color: #cbddfd !important;
 }
 
 .slick-initialized .slick-track {
   display: flex;
   align-items: center;
+}
+
+#stats {
+  background-image: url("../public/cta-primary-bg.jpg");
+  @apply bottom-0 bg-cover bg-center bg-no-repeat w-full;
+}
+
+.cool-title {
+  @apply mx-auto relative inline-block pb-4;
+}
+
+.cool-title:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  position: absolute;
+  background: var(--bg-button-color);
+  height: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1px;
+}
+
+.cool-title.t-left:after {
+  left: 0;
+  transform: none;
+}
+
+.partners-bg {
+  background-color: rgba(36, 98, 209, 0.11);
+}
+
+.slick-prev,
+.slick-next {
+  background: transparent !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(36, 98, 209, 0.36) !important;
+}
+
+.bg-grayish {
+  background: rgba(233, 236, 241, 0.27);
+}
+
+.journey-bg {
+  background-image: url("../public/img-1.jpg");
+  @apply bottom-0 bg-cover bg-center bg-no-repeat w-full;
 }

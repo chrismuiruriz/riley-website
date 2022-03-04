@@ -3,27 +3,27 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
-//import aar from "../public/partners/aar.png";
-import adventure from "../public/partners/adventure.png";
-import allen from "../public/partners/allen.png";
-//import cic from "../public/partners/cic.png";
-import concord from "../public/partners/concord.png";
-//import heritage from "../public/partners/heritage.png";
-import jcc from "../public/partners/jcc.png";
-//import madison from "../public/partners/madison.png";
-//import mic from "../public/partners/mic.png";
-import occidental from "../public/partners/occidental.png";
-//import pioneer from "../public/partners/pioneer.png";
-import reinit from "../public/partners/reinit.png";
-import rochem from "../public/partners/rochem.png";
-import savvy from "../public/partners/savvy.png";
-//import uap from "../public/partners/uap.png";
+import aar from "../public/partners/aar.png";
+// import adventure from "../public/partners/adventure.png";
+// import allen from "../public/partners/allen.png";
+import cic from "../public/partners/cic.png";
+// import concord from "../public/partners/concord.png";
+import heritage from "../public/partners/heritage.png";
+// import jcc from "../public/partners/jcc.png";
+import madison from "../public/partners/madison.png";
+import mic from "../public/partners/mic.png";
+// import occidental from "../public/partners/occidental.png";
+import pioneer from "../public/partners/pioneer.png";
+// import reinit from "../public/partners/reinit.png";
+// import rochem from "../public/partners/rochem.png";
+// import savvy from "../public/partners/savvy.png";
+import uap from "../public/partners/uap.png";
 
 const imageLoader = ({ src }) => {
   return `${src}`;
 };
 
-export default function Logos() {
+export default function Partners() {
   const [nav2, setNav2] = useState();
 
   return (
@@ -37,7 +37,7 @@ export default function Logos() {
         autoplay={true}
         arrows={true}
       >
-        {/* <div className="text-center">
+        <div className="text-center">
           <Image
             unoptimized={true}
             loader={imageLoader}
@@ -45,9 +45,9 @@ export default function Logos() {
             className="object-contain inline-block mx-auto w-auto"
             height={100}
           />
-        </div> */}
+        </div>
 
-        <div>
+        {/* <div>
           <Image
             unoptimized={true}
             loader={imageLoader}
@@ -55,8 +55,8 @@ export default function Logos() {
             className="object-contain inline-block mx-auto w-auto"
             width={100}
           />
-        </div>
-
+        </div> */}
+        {/* 
         <div>
           <Image
             unoptimized={true}
@@ -65,9 +65,9 @@ export default function Logos() {
             className="object-contain inline-block mx-auto w-auto"
             width={100}
           />
-        </div>
+        </div> */}
 
-        {/* <div className="text-center">
+        <div className="text-center">
           <Image
             unoptimized={true}
             loader={imageLoader}
@@ -75,9 +75,9 @@ export default function Logos() {
             className="object-contain inline-block mx-auto w-auto"
             width={100}
           />
-        </div> */}
+        </div>
 
-        <div>
+        {/* <div>
           <Image
             unoptimized={true}
             loader={imageLoader}
@@ -85,8 +85,8 @@ export default function Logos() {
             className="object-contain inline-block mx-auto w-auto"
             width={100}
           />
-        </div>
-        {/* 
+        </div> */}
+
         <div className="text-center">
           <Image
             unoptimized={true}
@@ -95,9 +95,9 @@ export default function Logos() {
             className="object-contain inline-block mx-auto w-auto"
             width={100}
           />
-        </div> */}
+        </div>
 
-        <div>
+        {/* <div>
           <Image
             unoptimized={true}
             loader={imageLoader}
@@ -105,8 +105,8 @@ export default function Logos() {
             className="object-contain inline-block mx-auto w-auto"
             width={100}
           />
-        </div>
-        {/* 
+        </div> */}
+
         <div className="text-center">
           <Image
             unoptimized={true}
@@ -115,9 +115,9 @@ export default function Logos() {
             className="object-contain inline-block mx-auto w-auto"
             width={100}
           />
-        </div> */}
+        </div>
 
-        {/* <div className="text-center">
+        <div className="text-center">
           <Image
             unoptimized={true}
             loader={imageLoader}
@@ -125,9 +125,9 @@ export default function Logos() {
             className="object-contain inline-block mx-auto w-auto"
             width={100}
           />
-        </div> */}
+        </div>
 
-        <div>
+        {/* <div>
           {" "}
           <Image
             unoptimized={true}
@@ -136,9 +136,9 @@ export default function Logos() {
             className="object-contain inline-block mx-auto w-auto"
             width={100}
           />
-        </div>
+        </div> */}
 
-        {/* <div className="text-center">
+        <div className="text-center">
           <Image
             unoptimized={true}
             loader={imageLoader}
@@ -146,9 +146,9 @@ export default function Logos() {
             className="object-contain inline-block mx-auto w-auto"
             width={100}
           />
-        </div> */}
+        </div>
 
-        <div>
+        {/* <div>
           <Image
             unoptimized={true}
             loader={imageLoader}
@@ -156,9 +156,9 @@ export default function Logos() {
             className="object-contain inline-block mx-auto w-auto"
             width={100}
           />
-        </div>
+        </div> */}
 
-        <div>
+        {/* <div>
           <Image
             unoptimized={true}
             loader={imageLoader}
@@ -166,9 +166,9 @@ export default function Logos() {
             className="object-contain inline-block mx-auto w-auto"
             width={100}
           />
-        </div>
+        </div> */}
 
-        <div>
+        {/* <div>
           <Image
             unoptimized={true}
             loader={imageLoader}
@@ -176,9 +176,9 @@ export default function Logos() {
             className="object-contain inline-block mx-auto w-auto"
             width={100}
           />
-        </div>
+        </div> */}
 
-        {/* <div className="text-center">
+        <div className="text-center">
           <Image
             unoptimized={true}
             loader={imageLoader}
@@ -186,7 +186,7 @@ export default function Logos() {
             className="object-contain inline-block mx-auto w-auto"
             width={100}
           />
-        </div> */}
+        </div>
       </Slider>
     </div>
   );

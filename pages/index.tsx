@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { ReactElement } from "react";
@@ -7,7 +6,11 @@ import CustomHead from "../components/CustomHead";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Logos from "../components/Logos";
+import Partners from "../components/Partners";
 import ConsultationForm from "../components/ConsultationForm";
+
+import Image from "next/image";
+import img1 from "../public/img-1.jpg";
 
 const imageLoader = ({ src }) => {
   return `${src}`;
@@ -184,10 +187,7 @@ export default function Home(): ReactElement {
         </div>
       </section>
 
-      <section
-        className="section highlighted py-6 pb-20"
-        id="insurance-solutions"
-      >
+      <section className="section highlighted py-16" id="insurance-solutions">
         <div className="container grid md:grid-cols-3 gap-4">
           <div className="relative">
             <div className="bg absolute z-0 w-full h-full bg-opacity-50 bg-blue-600"></div>
@@ -209,7 +209,7 @@ export default function Home(): ReactElement {
               </p>
 
               <div>
-                <Link href="/#quote-form">
+                <Link href="/solutions/individual">
                   <a className="btn inline-block">
                     <span>Learn more</span>
                   </a>
@@ -238,7 +238,7 @@ export default function Home(): ReactElement {
               </p>
 
               <div>
-                <Link href="/#quote-form">
+                <Link href="/solutions/business">
                   <a className="btn inline-block">
                     <span>Learn more</span>
                   </a>
@@ -283,297 +283,317 @@ export default function Home(): ReactElement {
         </div>
       </section>
 
-      <section className="section md:pt-14 pt-8 bg-blue-50" id="journey">
-        <div className="container pb-8 md:pb-14 ">
-          <div className="py-6">
-            <h2 className="mb-6 text-center font-extrabold md:text-5xl text-3xl">
-              Our Journey
-            </h2>
-
-            <div className=" text-center">
-              <p className="mb-3 leading-6">
-                Riley Insurance Consultants and Agency is a limited company that
-                deals with all products in{" "}
-                <span className="font-semibold text-primary">General</span>{" "}
-                Insurance,{" "}
-                <span className="font-semibold text-primary">Medical</span>{" "}
-                Insurance and{" "}
-                <span className="font-semibold text-primary">Life</span>{" "}
-                Assurance.
-              </p>
-
-              <p className="mb-3 leading-6">
-                We offer{" "}
-                <span className="font-semibold text-primary">individual</span>{" "}
-                and <span className="font-semibold text-primary">Business</span>{" "}
-                Insurance{" "}
-                <span className="font-semibold text-primary">Solutions</span>.
-                Our clientele consist of individuals, SME's, corporates and
-                multi-nationals.
-              </p>
-
-              <p className="mb-4 leading-6">
-                We have partnered with reputable insurance companies, thereby
-                providing our clients with competitive pricing and end to end
-                service.
-              </p>
+      <section className="section pt-8 py-16" id="journey">
+        <div className="container">
+          <div className="md:flex bg-white shadow-xl bg-grayish">
+            <div className="hidden md:block journey-bg">
+              <Image
+                unoptimized={true}
+                loader={imageLoader}
+                src={img1}
+                className="inline-block mx-auto w-auto opacity-0"
+              />
             </div>
-          </div>
-        </div>
 
-        <div className="bg-white md:py-14 py-8">
-          <div className="container md:-mt-32">
-            <div className="md:grid md:grid-cols-3 gap-6">
-              <div className="p-4 text-center md:mb-0 mb-4">
-                <div className="bg-blue-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
-                  <span className="text-4xl text-white">
-                    <FontAwesomeIcon icon={["fas", "route"]} />
-                  </span>
+            <div className="md:pl-12 md:p-8">
+              <div>
+                <h2 className="font-extrabold md:text-5xl text-3xl text-primary mb-8 cool-title t-left">
+                  Our Journey
+                </h2>
+
+                <div className="">
+                  <p className="mb-2 leading-6">
+                    Riley Insurance Consultants and Agency is a limited company
+                    that deals with all products in{" "}
+                    <span className="font-semibold text-primary">General</span>{" "}
+                    Insurance,{" "}
+                    <span className="font-semibold text-primary">Medical</span>{" "}
+                    Insurance and{" "}
+                    <span className="font-semibold text-primary">Life</span>{" "}
+                    Assurance.
+                  </p>
+
+                  <p className="mb-2 leading-6">
+                    We offer{" "}
+                    <span className="font-semibold text-primary">
+                      individual
+                    </span>{" "}
+                    and{" "}
+                    <span className="font-semibold text-primary">Business</span>{" "}
+                    Insurance{" "}
+                    <span className="font-semibold text-primary">
+                      Solutions
+                    </span>
+                    . Our clientele consist of individuals, SME's, corporates
+                    and multi-nationals.
+                  </p>
+
+                  <p className="mb-4 leading-6">
+                    We have partnered with reputable insurance companies,
+                    thereby providing our clients with competitive pricing and
+                    end to end service.
+                  </p>
                 </div>
-                <h4 className="font-bold text-2xl mb-2 text-black">Vision</h4>
 
-                <p className="md:text-lg">
-                  To be Africa's preferred insurance consultant leveraging on
-                  clients specific needs and innovation.
-                </p>
-              </div>
+                <div className="md:grid md:grid-cols-3 gap-6">
+                  <div className="p-4 text-center md:mb-0 mb-4 bg-blue-400">
+                    <div className="w-12 h-12 rounded-full my-4 inline-flex items-center justify-center">
+                      <span className="text-4xl text-white">
+                        <FontAwesomeIcon icon={["fas", "route"]} />
+                      </span>
+                    </div>
+                    <h4 className="font-bold text-xl mb-2 text-white">
+                      Vision
+                    </h4>
 
-              <div className="p-4 text-center md:mb-0 mb-4">
-                <div className="bg-blue-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
-                  <span className="text-4xl text-white">
-                    <FontAwesomeIcon icon={["fas", "bullseye"]} />
-                  </span>
-                </div>
-                <h4 className="font-bold text-2xl mb-2 text-black">Mission</h4>
+                    <p className="text-gray-100">
+                      To be Africa's preferred insurance consultant leveraging
+                      on clients specific needs and innovation.
+                    </p>
+                  </div>
 
-                <p className="md:text-lg">
-                  Create value addition for our clients through exceptional, end
-                  to end service and competitive pricing.
-                </p>
-              </div>
+                  <div className="p-4 text-center md:mb-0 mb-4 bg-blue-400">
+                    <div className="w-12 h-12 rounded-full my-4 inline-flex items-center justify-center">
+                      <span className="text-4xl text-white">
+                        <FontAwesomeIcon icon={["fas", "bullseye"]} />
+                      </span>
+                    </div>
+                    <h4 className="font-bold text-xl mb-2 text-white">
+                      Mission
+                    </h4>
 
-              <div className="p-4 text-center md:mb-0 mb-4">
-                <div className="bg-blue-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
-                  <span className="text-4xl text-white">
-                    <FontAwesomeIcon icon={["fas", "list"]} />
-                  </span>
-                </div>
-                <h4 className="font-bold text-2xl mb-2 text-black">
-                  Core Values
-                </h4>
+                    <p className="text-gray-100">
+                      Create value addition for our clients through exceptional,
+                      end to end service and competitive pricing.
+                    </p>
+                  </div>
 
-                <p className="md:text-lg">
-                  Responsive
-                  <br />
-                  Intuitive
-                  <br />
-                  Sincere
-                  <br />
-                  Efficient
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                  <div className="p-4 text-center md:mb-0 mb-4 bg-blue-400">
+                    <div className="w-12 h-12 rounded-full my-4 inline-flex items-center justify-center">
+                      <span className="text-4xl text-white">
+                        <FontAwesomeIcon icon={["fas", "list"]} />
+                      </span>
+                    </div>
+                    <h4 className="font-bold text-xl mb-2 text-white">
+                      Core Values
+                    </h4>
 
-      <section className="section md:pt-14 pt-8 bg-green-50" id="team">
-        <div className="container pb-4">
-          <div className="pt-6 pb-4">
-            <h2 className="mb-6 text-center font-extrabold md:text-5xl text-3xl">
-              The Team
-            </h2>
-          </div>
-        </div>
-
-        <div className="bg-white md:pb-14 pb-8 pt-8">
-          <div className="container">
-            <div className="md:grid md:grid-cols-5 gap-2">
-              <div className="p-4 text-center md:mb-0 mb-4">
-                <div className="bg-blue-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
-                  <span className="text-4xl text-white">
-                    <FontAwesomeIcon icon={["fas", "user"]} />
-                  </span>
-                </div>
-                <p className="text-base mb-1 text-black">Gabriel G. Kangethe</p>
-                <p className="text-sm mb-2 text-black">
-                  ACIM | MBA | AIIK | BCOM
-                </p>
-                <h3 className="font-bold text-sm mb-2 text-black">
-                  Managing Director &amp; PO
-                </h3>
-              </div>
-
-              <div className="p-4 text-center md:mb-0 mb-4">
-                <div className="bg-blue-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
-                  <span className="text-4xl text-white">
-                    <FontAwesomeIcon icon={["fas", "user"]} />
-                  </span>
-                </div>
-                <p className="text-base mb-1 text-black">David K. Mwangi</p>
-                <p className="text-sm mb-2 text-black">
-                  BBM- Risk &amp; Insurance
-                </p>
-                <h3 className="font-bold text-sm mb-2 text-black">
-                  Asst. Business Development Manager
-                </h3>
-              </div>
-
-              <div className="p-4 text-center md:mb-0 mb-4">
-                <div className="bg-blue-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
-                  <span className="text-4xl text-white">
-                    <FontAwesomeIcon icon={["fas", "user"]} />
-                  </span>
-                </div>
-                <p className="text-base mb-1 text-black">Aisha L. Munyao</p>
-                <p className="text-sm mb-2 text-black">AIIK* | BBM</p>
-                <h3 className="font-bold text-sm mb-2 text-black">
-                  Claims &amp; Underwriting Manager
-                </h3>
-              </div>
-
-              <div className="p-4 text-center md:mb-0 mb-4">
-                <div className="bg-blue-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
-                  <span className="text-4xl text-white">
-                    <FontAwesomeIcon icon={["fas", "user"]} />
-                  </span>
-                </div>
-                <p className="text-base mb-1 text-black">Juliet A. Owitti</p>
-                <p className="text-sm mb-2 text-black">
-                  M. Psych* | IHRM | BCOM
-                </p>
-                <h3 className="font-bold text-sm mb-2 text-black">
-                  Manager Admin &amp; Human Resource Manager
-                </h3>
-              </div>
-
-              <div className="p-4 text-center md:mb-0 mb-4">
-                <div className="bg-blue-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
-                  <span className="text-4xl text-white">
-                    <FontAwesomeIcon icon={["fas", "user"]} />
-                  </span>
-                </div>
-                <p className="text-base mb-1 text-black">Francis K. Murage</p>
-                <p className="text-sm mb-2 text-black">BCOM | CPA (K)</p>
-                <h3 className="font-bold text-sm mb-2 text-black">
-                  Finance Manager
-                </h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section md:pt-14 pt-8" id="stats">
-        <div className="bg-white md:pb-14 pb-8 pt-8">
-          <div className="container">
-            <div className="md:grid md:grid-cols-5 gap-2">
-              <div className="p-4 text-center md:mb-0 mb-4">
-               
-              </div>
-
-              <div className="p-4 text-center md:mb-0 mb-4">
-                <h3 className="font-bold text-2xl mb-2">Premiums</h3>
-
-                <div className="bg-blue-400 w-44 h-44 rounded-full my-4 inline-flex items-center justify-center">
-                  <span className="text-2xl text-white">
-                    <h3 className="font-bold mb-2">250M+</h3>
-                  </span>
+                    <p className="text-gray-100">
+                      Responsive
+                      <br />
+                      Intuitive
+                      <br />
+                      Sincere
+                      <br />
+                      Efficient
+                    </p>
+                  </div>
                 </div>
               </div>
-
-              <div className="p-4 text-center md:mb-0 mb-4">
-                <h3 className="font-bold text-2xl mb-2">Insured</h3>
-
-                <div className="bg-blue-400 w-44 h-44 rounded-full my-4 inline-flex items-center justify-center">
-                  <span className="text-2xl text-white">
-                    <h3 className="font-bold mb-2">1000+</h3>
-                  </span>
-                </div>
-              </div>
-
-              <div className="p-4 text-center md:mb-0 mb-4">
-                <h3 className="font-bold text-2xl mb-2">Happy Clients</h3>
-
-                <div className="bg-blue-400 w-44 h-44 rounded-full my-4 inline-flex items-center justify-center">
-                  <span className="text-2xl text-white">
-                    <h3 className="font-bold mb-2">200+</h3>
-                  </span>
-                </div>
-              </div>
-              
             </div>
           </div>
         </div>
       </section>
 
       <section
-        className="section md:pt-14 pt-8 bg-blue-50"
-        id="clients-partners"
+        className="section md:pt-14 pt-8 md:pb-14 pb-8 bg-white"
+        id="team"
       >
-        <div className="container pb-4">
-          <div className="pt-6 pb-4">
-            <h2 className="mb-6 text-center font-extrabold md:text-5xl text-3xl">
-              Clients &amp; Partners
+        <div className="container pb-4 mb-4">
+          <div className="text-center">
+            <h2 className="text-center font-extrabold md:text-5xl text-3xl text-primary cool-title">
+              Meet our Team
             </h2>
-
-            <div className=" text-center">
-              <p className="mb-3 leading-6">
-                We have strong relationships with our Clients &amp; Partners
-              </p>
-            </div>
           </div>
         </div>
 
-        <div className="bg-white md:pb-8 pt-8 pl-8 pr-8 pb-8">
-          <Logos />
+        <div className="md:pb-14 pb-8 pt-4">
+          <div className="container">
+            <div className="md:grid md:grid-cols-5 gap-6">
+              <div className="p-4 text-center md:mb-0 mb-4 shadow-lg bg-gray-100 bg-opacity-20">
+                <div className="bg-gray-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
+                  <span className="text-4xl text-white">
+                    <FontAwesomeIcon icon={["fas", "user"]} />
+                  </span>
+                </div>
+                <p className="text-base mt-4 text-black">Gabriel G. Kangethe</p>
+                <p className="text-sm mb-1 text-black">
+                  ACIM | MBA | AIIK | BCOM
+                </p>
+                <h3 className="font-bold text-xs mb-2 text-black">
+                  Managing Director
+                </h3>
+              </div>
+
+              <div className="p-4 text-center md:mb-0 mb-4 shadow-lg bg-gray-100 bg-opacity-20">
+                <div className="bg-gray-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
+                  <span className="text-4xl text-white">
+                    <FontAwesomeIcon icon={["fas", "user"]} />
+                  </span>
+                </div>
+                <p className="text-base mt-4 text-black">Jane R. Onimbo</p>
+                <p className="text-sm mb-1 text-black">MBA | AIIK | BBA</p>
+                <h3 className="font-bold text-xs mb-2 text-black">
+                  Claims &amp; Underwriting Manager
+                </h3>
+              </div>
+
+              <div className="p-4 text-center md:mb-0 mb-4 shadow-lg bg-gray-100 bg-opacity-20">
+                <div className="bg-gray-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
+                  <span className="text-4xl text-white">
+                    <FontAwesomeIcon icon={["fas", "user"]} />
+                  </span>
+                </div>
+                <p className="text-base mt-4 text-black">David K. Mwangi</p>
+                <p className="text-sm mb-1 text-black">BBM | COP</p>
+                <h3 className="font-bold text-xs mb-2 text-black">
+                  Asst. Business Development Manager
+                </h3>
+              </div>
+
+              <div className="p-4 text-center md:mb-0 mb-4 shadow-lg bg-gray-100 bg-opacity-20">
+                <div className="bg-gray-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
+                  <span className="text-4xl text-white">
+                    <FontAwesomeIcon icon={["fas", "user"]} />
+                  </span>
+                </div>
+                <p className="text-base mt-4 text-black">Juliet A. Owitti</p>
+                <p className="text-sm mb-1 text-black">
+                  M. Psych* | IHRM | BCOM
+                </p>
+                <h3 className="font-bold text-xs mb-2 text-black">
+                  Human Resource Manager
+                </h3>
+              </div>
+
+              <div className="p-4 text-center md:mb-0 mb-4 shadow-lg bg-gray-100 bg-opacity-20">
+                <div className="bg-gray-400 w-24 h-24 rounded-full my-4 inline-flex items-center justify-center">
+                  <span className="text-4xl text-white">
+                    <FontAwesomeIcon icon={["fas", "user"]} />
+                  </span>
+                </div>
+                <p className="text-base mt-4 text-black">Aisha L. Munyao</p>
+                <p className="text-sm mb-1 text-black">AIIK* | BBM</p>
+                <h3 className="font-bold text-xs mb-2 text-black">
+                  Business Coordinator
+                </h3>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section className="section md:py-24 py-10 bg-lightblue">
         <div className="container">
-          <h4 className="hidden mb-4 text-primary font-bold md:text-2xl text-xl text-center">
-            Protect you For better Futures
-          </h4>
+          <div className="text-center">
+            <h2 className="mb-6 text-center font-extrabold md:text-5xl text-3xl text-primary cool-title">
+              Contact Us
+            </h2>
+          </div>
 
-          <h2 className="mb-6 font-extrabold md:text-4xl text-3xl text-center max-w-xl mx-auto">
-            Creating <span className="text-primary">Value</span> Addition
-          </h2>
+          <div className="text-center">
+            <p>
+              We appreciate your feedback, this helps us better our service to
+              you.
+            </p>
 
-          <div className="grid md:grid-cols-2 md:gap-12 pt-8" id="quote-form">
-            <ConsultationForm />
+            <div className="py-4 mb-6">
+              <a
+                href="tel:+254797313151"
+                className="mx-2 text-primary inline-block hover:text-gray-300"
+              >
+                <span className="text-xs inline-block mr-1">
+                  <FontAwesomeIcon icon={["fas", "phone-alt"]} />{" "}
+                </span>
+                +254 792 486 591
+              </a>
+              <a
+                href="mailto:feedback@rileyconsultants.co.ke"
+                className="mx-2 text-primary inline-block hover:text-gray-300"
+              >
+                <span className="text-xs inline-block mr-1">
+                  <FontAwesomeIcon icon={["fas", "envelope"]} />{" "}
+                </span>
+                feedback@rileyconsultants.co.ke
+              </a>
+            </div>
+          </div>
 
-            <div className="py-6">
-              <h4 className="mb-4 text-primary font-bold md:text-xl text-lg">
-                Client Services
-              </h4>
+          <div id="quote-form">
+            <div className="max-w-2xl mx-auto">
+              <ConsultationForm />
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <h2 className="mb-4 font-bold md:text-4xl text-2xl">
-                Title Here
-              </h2>
-
-              <p className="mb-4 leading-6">
-                Molitia modi quae laboriosam nemo minima molestias vitae rerulla
-                eosipn explicabo optio acusan provident nisi veniam uravbitur
-                non erat ut orci maleada egestas eget ex massa hauris.
-              </p>
-
+      <section className="section md:p-14 py-8" id="stats">
+        <div className="container">
+          <div className="flex items-center justify-around">
+            <div className="inline-flex items-center">
+              <div className="mr-4">
+                <span className="text-sm md:text-6xl text-white">
+                  <FontAwesomeIcon icon={["fas", "user-shield"]} />
+                </span>
+              </div>
               <div>
-                <p>
-                  <span className="text-primary">
-                    <FontAwesomeIcon icon={["fas", "phone-alt"]} />
-                  </span>{" "}
-                  We appreciate your feedback? Call us:{" "}
-                  <a
-                    href="tel:+254797313151"
-                    className="text-primary text-xl font-bold"
-                  >
-                    +254 792 486 591
-                  </a>
-                </p>
+                <div className="text-base md:text-5xl font-bold text-white md:mb-1">
+                  500+
+                </div>
+                <div className="text-gray-200 md:text-lg text-sm">Happy Clients</div>
+              </div>
+            </div>
+
+            <div className="inline-flex items-center">
+              <div className="mr-4">
+                <span className="text-sm md:text-6xl text-white">
+                  <FontAwesomeIcon icon={["fas", "file-alt"]} />
+                </span>
+              </div>
+              <div>
+                <div className="text-base md:text-5xl font-bold text-white md:mb-1">
+                  600+
+                </div>
+                <div className="text-gray-200 md:text-lg text-sm">Policies</div>
+              </div>
+            </div>
+
+            <div className="inline-flex items-center">
+              <div className="mr-4">
+                <span className="text-sm md:text-6xl text-white">
+                  <FontAwesomeIcon icon={["fas", "handshake"]} />
+                </span>
+              </div>
+              <div>
+                <div className="text-base md:text-5xl font-bold text-white md:mb-1">
+                  10+
+                </div>
+                <div className="text-gray-200 md:text-lg text-sm">Partners</div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="section bg-white" id="clients">
+        <div className="bg-white px-8">
+          <div className="container text-center">
+            <h4 className="py-6 text-center text-primary font-bold text-2xl cool-title">
+              Our Clients
+            </h4>
+          </div>
+          <Logos />
+        </div>
+      </section>
+
+      <section className="section partners-bg" id="partners">
+        <div className="px-8">
+          <div className="container text-center">
+            <h4 className="py-6 text-center text-primary font-bold text-2xl cool-title">
+              Our Partners
+            </h4>
+          </div>
+          <Partners />
         </div>
       </section>
 

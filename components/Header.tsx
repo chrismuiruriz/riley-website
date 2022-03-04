@@ -56,19 +56,19 @@ export default function Header(props): ReactElement {
                 <span className="text-xs inline-block mr-1">
                   <FontAwesomeIcon icon={["fas", "map-marker-alt"]} />{" "}
                 </span>
-                Royal Offices, 18A, Westlands, Nairobi, Kenya
+                Royal Offices, 18A, Westlands, Nairobi, Kenya.
               </a>
 
-              <a href="/">
+              <a href="mailto:info@rileyconsultants.co.ke">
                 <span className="text-xs inline-block mr-1">
-                  <FontAwesomeIcon icon={["fas", "phone-alt"]} />{" "}
+                  <FontAwesomeIcon icon={["fas", "envelope"]} />{" "}
                 </span>
                 info@rileyconsultants.co.ke
               </a>
 
               <a href="tel:+254797313151">
                 <span className="text-xs inline-block mr-1">
-                  <FontAwesomeIcon icon={["fas", "envelope"]} />{" "}
+                  <FontAwesomeIcon icon={["fas", "phone-alt"]} />{" "}
                 </span>
                 +254 792 486 591
               </a>
@@ -139,15 +139,15 @@ export default function Header(props): ReactElement {
                         </a>
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link href="/#insurance-solutions">
                         <a className="transition-all">
                           <span>Careers</span>
                         </a>
                       </Link>
-                    </li>
+                    </li> */}
                     <li>
-                      <Link href="/#clients-partners">
+                      <Link href="/#clients">
                         <a className="transition-all">
                           <span>Clients &amp; Partners</span>
                         </a>
