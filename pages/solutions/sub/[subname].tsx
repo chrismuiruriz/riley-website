@@ -8,6 +8,10 @@ import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import products from "../../services/Products.json";
 
+let getSolutions = (activeSolution) => {
+  return products.filter((product) => product.solutions == activeSolution);
+};
+
 export default function SubService(): ReactElement {
   const router = useRouter();
 
@@ -24,13 +28,16 @@ export default function SubService(): ReactElement {
     const sol: any = subname;
 
     setActiveSolution(decodeURIComponent(sol));
-  });
+  }, [activeSolution]);
 
-  const solutions = products.filter(
-    (product) => product.solutions == activeSolution
-  );
+  useEffect(() => {
+    if (activeSolution == "" || activeSolution == undefined) {
+      return;
+    }
 
-  // /setProductList(solutions);
+    let products = getSolutions(activeSolution);
+    setProductList(products[0]?.subSolutions);
+  }, [activeSolution]);
 
   return (
     <>

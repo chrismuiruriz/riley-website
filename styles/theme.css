@@ -27,6 +27,9 @@ html {
   .text-primary {
     color: var(--bg-button-color);
   }
+  .bg-primary {
+    background: var(--bg-button-color);
+  }
   .text-lighblue {
     color: var(--bg-bluelight-color);
   }
@@ -250,10 +253,10 @@ body {
 }
 
 .cool-title {
-  @apply mx-auto relative inline-block pb-4;
+  @apply mx-auto relative inline-block;
 }
 
-.cool-title:after {
+/* .cool-title:after {
   content: "";
   display: inline-block;
   width: 50%;
@@ -263,7 +266,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   bottom: 1px;
-}
+} */
 
 .cool-title.t-left:after {
   left: 0;
@@ -291,4 +294,27 @@ body {
 .journey-bg {
   background-image: url("../public/img-1.jpg");
   @apply bottom-0 bg-cover bg-center bg-no-repeat w-full;
+}
+
+.float {
+  position: fixed;
+  width: 75px;
+  height: 75px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-float {
+  margin: 0;
+  font-size: 3rem;
 }

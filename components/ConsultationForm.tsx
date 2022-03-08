@@ -23,7 +23,7 @@ export default function ConsultationForm() {
         className="shadow-lg bg-white md:px-8 md:py-10 py-6 px-4"
       >
         <h2 className="md:mb-8 mb-6 text-gray-700 font-bold md:text-2xl text-xl text-center">
-          Request for quote/consultation
+          Request for Quote/Consultation
         </h2>
 
         <div className="md:grid md:grid-cols-2 md:gap-4 mb-4">

@@ -169,8 +169,8 @@ export default function Footer(props): ReactElement {
           </div>
         </div>
 
-        <div className="text-center pt-8 text-w text-sm text-gray-400">
-          Regulated By Insurance Regulatory Authority
+        <div className="text-center pt-8 text-w text-sm text-gray-400 font-italics">
+          <i>Regulated by Insurance Regulatory Authority</i>
         </div>
       </footer>
 

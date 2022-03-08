@@ -274,7 +274,7 @@ export default function Home(): ReactElement {
               <div>
                 <Link href="/#quote-form">
                   <a className="btn inline-block">
-                    <span>Get a quote</span>
+                    <span>Learn More</span>
                   </a>
                 </Link>
               </div>
@@ -283,9 +283,9 @@ export default function Home(): ReactElement {
         </div>
       </section>
 
-      <section className="section pt-8 py-16" id="journey">
+      <section className="section pb-16" id="journey">
         <div className="container">
-          <div className="md:flex bg-white shadow-xl bg-grayish">
+          <div className="md:flex bg-white shadow-xl bg-lightblue">
             <div className="hidden md:block journey-bg">
               <Image
                 unoptimized={true}
@@ -297,46 +297,34 @@ export default function Home(): ReactElement {
 
             <div className="md:pl-12 md:p-8">
               <div>
-                <h2 className="font-extrabold md:text-5xl text-3xl text-primary mb-8 cool-title t-left">
+                <h2 className="font-extrabold md:text-5xl text-3xl text-primary mb-4 cool-title t-left">
                   Our Journey
                 </h2>
 
                 <div className="">
-                  <p className="mb-2 leading-6">
-                    Riley Insurance Consultants and Agency is a limited company
-                    that deals with all products in{" "}
-                    <span className="font-semibold text-primary">General</span>{" "}
-                    Insurance,{" "}
-                    <span className="font-semibold text-primary">Medical</span>{" "}
-                    Insurance and{" "}
-                    <span className="font-semibold text-primary">Life</span>{" "}
-                    Assurance.
+                  <p className="mb-3 leading-6">
+                    In 2013 we registered as a sole proprietorship "Reinit
+                    Insurance Agency". The business name was changed to “Riley
+                    Insurance Consultants &amp; Agency” in 2017 and incorporated
+                    to a limited company in 2021. RIC has experienced steady
+                    growth from a business name to a limited company, with
+                    clients in Africa and Asia.
                   </p>
 
-                  <p className="mb-2 leading-6">
-                    We offer{" "}
-                    <span className="font-semibold text-primary">
-                      individual
-                    </span>{" "}
-                    and{" "}
-                    <span className="font-semibold text-primary">Business</span>{" "}
-                    Insurance{" "}
-                    <span className="font-semibold text-primary">
-                      Solutions
-                    </span>
-                    . Our clientele consist of individuals, SME's, corporates
-                    and multi-nationals.
+                  <p className="mb-3 leading-6">
+                    RIC is a member of Kenya National Chambers of Commerce &amp;
+                    Industry and Association of Kenya Professional Insurance
+                    Agents.
                   </p>
 
-                  <p className="mb-4 leading-6">
-                    We have partnered with reputable insurance companies,
-                    thereby providing our clients with competitive pricing and
-                    end to end service.
+                  <p className="mb-6 leading-6">
+                    We are registered in The Republic of Kenya and regulated by
+                    the Insurance Regulatory Authority.
                   </p>
                 </div>
 
                 <div className="md:grid md:grid-cols-3 gap-6">
-                  <div className="p-4 text-center md:mb-0 mb-4 bg-blue-400">
+                  <div className="p-4 text-center md:mb-0 mb-4 bg-primary">
                     <div className="w-12 h-12 rounded-full my-4 inline-flex items-center justify-center">
                       <span className="text-4xl text-white">
                         <FontAwesomeIcon icon={["fas", "route"]} />
@@ -352,7 +340,7 @@ export default function Home(): ReactElement {
                     </p>
                   </div>
 
-                  <div className="p-4 text-center md:mb-0 mb-4 bg-blue-400">
+                  <div className="p-4 text-center md:mb-0 mb-4 bg-primary">
                     <div className="w-12 h-12 rounded-full my-4 inline-flex items-center justify-center">
                       <span className="text-4xl text-white">
                         <FontAwesomeIcon icon={["fas", "bullseye"]} />
@@ -368,7 +356,7 @@ export default function Home(): ReactElement {
                     </p>
                   </div>
 
-                  <div className="p-4 text-center md:mb-0 mb-4 bg-blue-400">
+                  <div className="p-4 text-center md:mb-0 mb-4 bg-primary">
                     <div className="w-12 h-12 rounded-full my-4 inline-flex items-center justify-center">
                       <span className="text-4xl text-white">
                         <FontAwesomeIcon icon={["fas", "list"]} />
@@ -395,19 +383,16 @@ export default function Home(): ReactElement {
         </div>
       </section>
 
-      <section
-        className="section md:pt-14 pt-8 md:pb-14 pb-8 bg-white"
-        id="team"
-      >
+      <section className="section pb-16 bg-white" id="team">
         <div className="container pb-4 mb-4">
           <div className="text-center">
             <h2 className="text-center font-extrabold md:text-5xl text-3xl text-primary cool-title">
-              Meet our Team
+              The Team
             </h2>
           </div>
         </div>
 
-        <div className="md:pb-14 pb-8 pt-4">
+        <div className="pt-4">
           <div className="container">
             <div className="md:grid md:grid-cols-5 gap-6">
               <div className="p-4 text-center md:mb-0 mb-4 shadow-lg bg-gray-100 bg-opacity-20">
@@ -483,47 +468,25 @@ export default function Home(): ReactElement {
         </div>
       </section>
 
-      <section className="section md:py-24 py-10 bg-lightblue">
-        <div className="container">
-          <div className="text-center">
-            <h2 className="mb-6 text-center font-extrabold md:text-5xl text-3xl text-primary cool-title">
-              Contact Us
-            </h2>
+      <section className="section partners-bg pb-8" id="clients">
+        <div className="bg-transparent px-8">
+          <div className="container text-center pb-4 mb-4 pt-6">
+            <h4 className="text-center font-extrabold md:text-5xl text-3xl text-primary cool-title">
+              Clients
+            </h4>
           </div>
+          <Logos />
+        </div>
+      </section>
 
-          <div className="text-center">
-            <p>
-              We appreciate your feedback, this helps us better our service to
-              you.
-            </p>
-
-            <div className="py-4 mb-6">
-              <a
-                href="tel:+254797313151"
-                className="mx-2 text-primary inline-block hover:text-gray-300"
-              >
-                <span className="text-xs inline-block mr-1">
-                  <FontAwesomeIcon icon={["fas", "phone-alt"]} />{" "}
-                </span>
-                +254 792 486 591
-              </a>
-              <a
-                href="mailto:feedback@rileyconsultants.co.ke"
-                className="mx-2 text-primary inline-block hover:text-gray-300"
-              >
-                <span className="text-xs inline-block mr-1">
-                  <FontAwesomeIcon icon={["fas", "envelope"]} />{" "}
-                </span>
-                feedback@rileyconsultants.co.ke
-              </a>
-            </div>
+      <section className="section bg-white pt-8 pb-8" id="partners">
+        <div className="px-8">
+          <div className="container text-center pb-4 mb-4 pt-4">
+            <h4 className="text-center font-extrabold md:text-5xl text-3xl text-primary cool-title">
+              Partners
+            </h4>
           </div>
-
-          <div id="quote-form">
-            <div className="max-w-2xl mx-auto">
-              <ConsultationForm />
-            </div>
-          </div>
+          <Partners />
         </div>
       </section>
 
@@ -540,7 +503,9 @@ export default function Home(): ReactElement {
                 <div className="text-base md:text-5xl font-bold text-white md:mb-1">
                   500+
                 </div>
-                <div className="text-gray-200 md:text-lg text-sm">Happy Clients</div>
+                <div className="text-gray-200 md:text-lg text-sm">
+                  Happy Clients
+                </div>
               </div>
             </div>
 
@@ -575,30 +540,60 @@ export default function Home(): ReactElement {
         </div>
       </section>
 
-      <section className="section bg-white" id="clients">
-        <div className="bg-white px-8">
-          <div className="container text-center">
-            <h4 className="py-6 text-center text-primary font-bold text-2xl cool-title">
-              Our Clients
-            </h4>
+      <section className="section md:py-16 py-10 bg-lightblue">
+        <div className="container">
+          <div className="text-center">
+            <h2 className="mb-4 text-center font-extrabold md:text-5xl text-3xl text-primary cool-title">
+              Contact Us
+            </h2>
           </div>
-          <Logos />
-        </div>
-      </section>
 
-      <section className="section partners-bg" id="partners">
-        <div className="px-8">
-          <div className="container text-center">
-            <h4 className="py-6 text-center text-primary font-bold text-2xl cool-title">
-              Our Partners
-            </h4>
+          <div className="text-center">
+            <p>
+              We appreciate your feedback, this helps us better our service to
+              you.
+            </p>
+
+            <div className="pt-2 pb-4 mb-4">
+              <a
+                href="tel:+254797313151"
+                className="mx-2 text-primary inline-block hover:text-gray-300"
+              >
+                <span className="text-xs inline-block mr-1">
+                  <FontAwesomeIcon icon={["fas", "phone-alt"]} />{" "}
+                </span>
+                +254 792 486 591
+              </a>
+              <a
+                href="mailto:info@rileyconsultants.co.ke"
+                className="mx-2 text-primary inline-block hover:text-gray-300"
+              >
+                <span className="text-xs inline-block mr-1">
+                  <FontAwesomeIcon icon={["fas", "envelope"]} />{" "}
+                </span>
+                info@rileyconsultants.co.ke
+              </a>
+            </div>
           </div>
-          <Partners />
+
+          <div id="quote-form">
+            <div className="max-w-2xl mx-auto">
+              <ConsultationForm />
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Footer */}
       <Footer />
+
+      <a
+        href="https://api.whatsapp.com/send?phone=25497313151"
+        className="float"
+        target="_blank"
+      >
+        <FontAwesomeIcon icon={["fab", "whatsapp"]} className="my-float"/>
+      </a>
     </>
   );
 }
